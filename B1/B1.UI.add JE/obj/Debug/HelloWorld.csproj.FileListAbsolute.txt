@@ -1,0 +1,6 @@
+D:\Dropbox2\99_Note\code\Tool\Tool.B1 UI\32.JE\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Dropbox2\99_Note\code\Tool\Tool.B1 UI\32.JE\obj\Debug\HelloWorld.csproj.ResolveComReference.cache
+D:\Dropbox2\99_Note\code\B1\32.JE\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Dropbox2\99_Note\code\B1\32.JE\obj\Debug\HelloWorld.csproj.ResolveComReference.cache
+D:\Dropbox2\99_Note\code\B1\32.B1.UI.add JE\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Dropbox2\99_Note\code\B1\32.B1.UI.add JE\obj\Debug\HelloWorld.csproj.ResolveComReference.cache
