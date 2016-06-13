@@ -1,0 +1,7 @@
+D:\Dropbox2\99_Note\code\Tool\zipYFYCRSQL\zipYFYCRSQL\bin\Debug\7z.dll
+D:\Dropbox2\99_Note\code\Tool\zipYFYCRSQL\zipYFYCRSQL\bin\Debug\zipYFYCRSQL.exe
+D:\Dropbox2\99_Note\code\Tool\zipYFYCRSQL\zipYFYCRSQL\bin\Debug\zipYFYCRSQL.pdb
+D:\Dropbox2\99_Note\code\Tool\zipYFYCRSQL\zipYFYCRSQL\bin\Debug\SevenZipSharp.dll
+D:\Dropbox2\99_Note\code\Tool\zipYFYCRSQL\zipYFYCRSQL\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox2\99_Note\code\Tool\zipYFYCRSQL\zipYFYCRSQL\obj\x86\Debug\zipYFYCRSQL.exe
+D:\Dropbox2\99_Note\code\Tool\zipYFYCRSQL\zipYFYCRSQL\obj\x86\Debug\zipYFYCRSQL.pdb
