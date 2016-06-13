@@ -1,0 +1,41 @@
+<Application>
+  <forms>
+    <action type="add">
+      <form AutoManaged="0" BorderStyle="0" FormType="OCRD" ObjectType="2" SupportedModes="15" appformnumber="OCRD" client_height="373" client_width="518" color="0" default_button="1" height="373" left="219" mode="0" pane="1" title="OCRD" top="95" type="0" uid="OCRD_" visible="1" width="518">
+        <datasources>
+          <dbdatasources>
+            <action type="add">
+              <datasource tablename="OCRD" />
+            </action>
+          </dbdatasources>
+        </datasources>
+        <items>
+          <action type="add">
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="1" width="65" height="20" top="320" left="5" type="4" />
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="2" width="65" height="20" top="320" left="75" type="4" />
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="3" width="80" height="14" top="5" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="CardCode" databound="1" table="OCRD" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="3" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="4" width="80" height="14" top="5" left="5" type="8">
+              <specific caption="Code" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="5" width="80" height="14" top="20" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="CardName" databound="1" table="OCRD" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="5" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="6" width="80" height="14" top="20" left="5" type="8">
+              <specific caption="Name" />
+            </item>
+             
+          </action>
+        </items>
+        <DataBrowser BrowseBy="3" />
+      </form>
+    </action>
+  </forms>
+</Application>

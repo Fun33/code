@@ -1,0 +1,32 @@
+D:\cadmen\una_work\sample\0-test envoment for test\COM UI\31.LoadFormByXML\obj\x86\Debug\Interop.SAPbobsCOM.dll
+D:\cadmen\una_work\sample\0-test envoment for test\COM UI\31.LoadFormByXML\obj\x86\Debug\Interop.SAPbouiCOM.dll
+D:\cadmen\una_work\sample\0-test envoment for test\COM UI\31.LoadFormByXML\obj\x86\Debug\HelloWorld.csproj.ResolveComReference.cache
+D:\cadmen\una_work\sample\0-test envoment for test\COM UI\31.LoadFormByXML\obj\x86\Debug\Project1.exe
+D:\cadmen\una_work\sample\0-test envoment for test\COM UI\31.LoadFormByXML\obj\x86\Debug\Project1.pdb
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\obj\x86\Debug\Interop.SAPbobsCOM.dll
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\obj\x86\Debug\Interop.SAPbouiCOM.dll
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\obj\x86\Debug\HelloWorld.csproj.ResolveComReference.cache
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\obj\x86\Debug\Project1.exe
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\obj\x86\Debug\Project1.pdb
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\17-有資料.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\17.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\22.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\addmenu.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\delmenu.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\f2.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\f2-2.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\f22.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\f17.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\17-tx-cfl.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\17-col-cfl.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\doc.xml
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\Project1.exe
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\Project1.pdb
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\Interop.SAPbobsCOM.dll
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\Interop.SAPbouiCOM.dll
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\cadmen\una_work\sample\COM UI\31.LoadFormByXML\bin\XML_Init\select.xml
+D:\Dropbox2\99_Note\code\B1\31.LoadFormByXML\obj\x86\Debug\Interop.SAPbobsCOM.dll
+D:\Dropbox2\99_Note\code\B1\31.LoadFormByXML\obj\x86\Debug\HelloWorld.csproj.ResolveComReference.cache
+D:\Dropbox2\99_Note\code\B1\31.LoadFormByXML\obj\x86\Debug\Project1.exe
+D:\Dropbox2\99_Note\code\B1\31.LoadFormByXML\obj\x86\Debug\Project1.pdb

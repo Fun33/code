@@ -1,0 +1,80 @@
+<Application>
+	<forms>
+		<action type="add">
+			<form AutoManaged="1" BorderStyle="0" FormType="Doc" ObjectType="Doc" SupportedModes="15" appformnumber="Doc" client_height="373" client_width="518" color="0" default_button="1" height="373" left="219" mode="0" pane="1" title="Doc" top="95" type="0" uid="Doc_" visible="1" width="518">
+				<datasources>
+					<dbdatasources>
+						<action type="add">
+							<datasource tablename="@DOC" />
+							<datasource tablename="@DOCLINE" />
+						</action>
+					</dbdatasources>
+					<userdatasources>
+						<action type="add">
+							<datasource size="9" type="1" uid="FolderDS" />
+						</action>
+					</userdatasources>
+				</datasources>
+				<items>
+					<action type="add">
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="1" width="65" height="20" top="320" left="5" type="4" />
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="2" width="65" height="20" top="320" left="75" type="4" />
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="add" width="65" height="20" top="320" left="370" type="4">
+							<specific caption="Add line" />
+						</item>
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="del" width="65" height="20" top="320" left="440" type="4">
+							<specific caption="Del line" />
+						</item>
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="0" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="3" width="80" height="14" top="5" left="92" type="16">
+							<AutoManagedAttribute />
+							<specific>
+								<databind alias="DocEntry" databound="1" table="@DOC" />
+							</specific>
+						</item>
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="3" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="4" width="80" height="14" top="5" left="5" type="8">
+							<specific caption="DocEntry" />
+						</item>
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="5" width="80" height="14" top="20" left="92" type="16">
+							<AutoManagedAttribute />
+							<specific>
+								<databind alias="DocNum" databound="1" table="@DOC" />
+							</specific>
+						</item>
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="5" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="6" width="80" height="14" top="20" left="5" type="8">
+							<specific caption="DocNum" />
+						</item>
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="7" width="80" height="14" top="35" left="92" type="16">
+							<AutoManagedAttribute />
+							<specific>
+								<databind alias="U_CardCode" databound="1" table="@DOC" />
+							</specific>
+						</item>
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="7" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="8" width="80" height="14" top="35" left="5" type="8">
+							<specific caption="CardCode" />
+						</item>
+						<item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" visible="1" uid="mtx_0" width="500" height="155" top="113" left="5" type="127" to_pane="0" from_pane="0">
+							<AutoManagedAttribute />
+							<specific SelectionMode="1" layout="0" titleHeight="20">
+								<columns>
+									<action type="add">
+										<column AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" editable="1" font_size="12" forecolor="-1" right_just="0" text_style="0" visible="1" val_off="" val_on="" title="#" uid="col_f" width="20" type="16" />
+										<column AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" editable="1" font_size="12" forecolor="-1" right_just="0" text_style="0" visible="1" val_off="" val_on="" title="ItemCode" uid="col_0" width="225" type="16">
+											<databind alias="U_ItemCode" databound="1" table="@DOCLINE" />
+											<ExtendedObject linkedObject="4" LinkedObjectType="4" />
+											<ExtendedObject />
+										</column>
+										<column AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" editable="1" font_size="12" forecolor="-1" right_just="0" text_style="0" visible="1" val_off="" val_on="" title="qty" uid="col_1" width="225" type="16">
+											<databind alias="U_qty" databound="1" table="@DOCLINE" />
+											<ExtendedObject />
+										</column>
+									</action>
+								</columns>
+							</specific>
+						</item>
+					</action>
+				</items>
+				<DataBrowser BrowseBy="3" />
+			</form>
+		</action>
+	</forms>
+</Application>

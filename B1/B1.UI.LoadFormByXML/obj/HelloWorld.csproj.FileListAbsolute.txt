@@ -1,0 +1,50 @@
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\Debug\HelloWorld.csproj.ResolveComReference.cache
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\Debug\Project1.exe
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\Debug\Project1.pdb
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\x86\Debug\Interop.SAPbouiCOM.dll
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\x86\Debug\HelloWorld.csproj.ResolveComReference.cache
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\x86\Debug\Project1.exe
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\obj\x86\Debug\Project1.pdb
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\bin\Project1.exe
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\bin\Project1.pdb
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\bin\Interop.SAPbouiCOM.dll
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\bin\XML_Init\addmenu.xml
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\bin\XML_Init\bp.srf
+C:\Program Files\SAP\SAP Business One SDK\Samples\COM UI\CSharp\01.HelloWorld\bin\XML_Init\delmenu.xml
+F:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\Project1.exe
+F:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\Project1.pdb
+F:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\Interop.SAPbouiCOM.dll
+F:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\HelloWorld.csproj.ResolveComReference.cache
+F:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\addmenu.xml
+F:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\bp.srf
+F:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\delmenu.xml
+F:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\select17.srf
+F:\cadmen\una_work\sample\01.HelloWorld\bin\Project1.exe
+F:\cadmen\una_work\sample\01.HelloWorld\bin\Project1.pdb
+F:\cadmen\una_work\sample\01.HelloWorld\bin\Interop.SAPbouiCOM.dll
+Z:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\Project1.exe
+Z:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\Project1.pdb
+Z:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\Interop.SAPbouiCOM.dll
+Z:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\HelloWorld.csproj.ResolveComReference.cache
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\addmenu.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\delmenu.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\Project1.exe
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\Project1.pdb
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\Interop.SAPbouiCOM.dll
+Z:\cadmen\una_work\sample\01.HelloWorld\obj\x86\Debug\Interop.SAPbobsCOM.dll
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\Interop.SAPbobsCOM.dll
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\f22.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\f17.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\f2.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\f2-2.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\17.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\17-tx-cfl.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\17-col-cfl.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\17-有資料.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\22.xml
+Z:\cadmen\una_work\sample\01.HelloWorld\bin\XML_Init\doc.xml

@@ -1,0 +1,148 @@
+<Application>
+  <forms>
+    <action type="add">
+      <form AutoManaged="0" BorderStyle="0" FormType="BNBPDV" ObjectType="BNBPDV" SupportedModes="15" appformnumber="BNBPDV" client_height="373" client_width="518" color="0" default_button="1" height="373" left="219" mode="0" pane="1" title="BNBPDV" top="95" type="0" uid="BNBPDV_" visible="1" width="518">
+        <datasources>
+          <dbdatasources>
+            <action type="add">
+              <datasource tablename="@BNBPDV" />
+            </action>
+          </dbdatasources>
+        </datasources>
+        <items>
+          <action type="add">
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="1" width="65" height="20" top="320" left="5" type="4" />
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="2" width="65" height="20" top="320" left="75" type="4" />
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="3" width="80" height="14" top="5" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="Code" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="3" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="4" width="80" height="14" top="5" left="5" type="8">
+              <specific caption="Code" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="5" width="80" height="14" top="20" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="Name" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="5" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="6" width="80" height="14" top="20" left="5" type="8">
+              <specific caption="Name" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="7" width="80" height="14" top="35" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_BPCode" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="7" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="8" width="80" height="14" top="35" left="5" type="8">
+              <specific caption="BPCode" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="9" width="80" height="14" top="50" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_VATRegNo" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="9" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="10" width="80" height="14" top="50" left="5" type="8">
+              <specific caption="VATRegNo" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="11" width="80" height="14" top="65" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_TransMod" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="11" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="12" width="80" height="14" top="65" left="5" type="8">
+              <specific caption="TransMod" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="13" width="80" height="14" top="80" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_Incoterm" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="13" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="14" width="80" height="14" top="80" left="5" type="8">
+              <specific caption="Incoterm" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="15" width="80" height="14" top="95" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_State" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="15" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="16" width="80" height="14" top="95" left="5" type="8">
+              <specific caption="State" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="17" width="80" height="14" top="110" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_NatTran" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="17" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="18" width="80" height="14" top="110" left="5" type="8">
+              <specific caption="NatTran" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="19" width="80" height="14" top="125" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_StatProc" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="19" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="20" width="80" height="14" top="125" left="5" type="8">
+              <specific caption="StatProc" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="21" width="80" height="14" top="140" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_CustProc" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="21" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="22" width="80" height="14" top="140" left="5" type="8">
+              <specific caption="CustProc" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="23" width="80" height="14" top="155" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_CouOri" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="23" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="24" width="80" height="14" top="155" left="5" type="8">
+              <specific caption="CouOri" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="25" width="80" height="14" top="170" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_Port" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="25" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="26" width="80" height="14" top="170" left="5" type="8">
+              <specific caption="Port" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="27" width="80" height="14" top="185" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_DomFrgId" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="27" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="28" width="80" height="14" top="185" left="5" type="8">
+              <specific caption="DomFrgId" />
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="29" width="80" height="14" top="200" left="92" type="16">
+              <AutoManagedAttribute />
+              <specific>
+                <databind alias="U_Relevant" databound="1" table="@BNBPDV" />
+              </specific>
+            </item>
+            <item AffectsFormMode="1" backcolor="-1" description="" disp_desc="0" enabled="1" font_size="0" forecolor="-1" from_pane="0" linkto="29" right_just="0" supp_zeros="0" tab_order="0" text_style="0" to_pane="0" visible="1" uid="30" width="80" height="14" top="200" left="5" type="8">
+              <specific caption="Relevant" />
+            </item>
+          </action>
+        </items>
+        <DataBrowser BrowseBy="3" />
+      </form>
+    </action>
+  </forms>
+</Application>
