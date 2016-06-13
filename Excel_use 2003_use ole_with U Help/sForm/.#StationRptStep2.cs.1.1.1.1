@@ -1,0 +1,509 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+namespace TMVC_WorkStationRecord.sForm
+{
+    public partial class StationRptStep2 : Form
+    {
+        TMVC_Appliction appl;
+        MainForm main;
+
+        write wr = new write();
+        read rd = new read();
+
+        System.Data.DataTable dtGV;
+        private ComboBox cbNGReasonGV = new ComboBox();
+        private int icbCol = 5;
+        bool AllChk = false;
+
+        int TextBoxNumber;
+        DateTime FirstClick;
+
+        private int ColChk, ColActNO, ColSONO, ColStationStatus, ColNGQty, ColNGReason, ColRptMan, ColRptDate, ColRptTime;
+       
+        public StationRptStep2(TMVC_Appliction fTMVC_Appliction,MainForm _main)
+        {           
+            InitializeComponent();
+            appl = fTMVC_Appliction;
+            main = _main;
+
+            ColChk = 0; ColActNO = 1; ColSONO = 2; ColStationStatus = 3; ColNGQty = 4; ColNGReason = 5; ColRptMan = 6; ColRptDate = 7; ColRptTime = 8;
+
+        }
+        private void StationRptStep2_Load(object sender, EventArgs e)
+        {
+            this.Text = "站點查詢 - " + appl.StationName;
+
+            BindCbStationStatus();
+
+            //LoadGVdt();
+        }
+
+        #region [ Init CB of Find ]    [ Init chk of GV ]   [ reLoadGV ] ...etc
+
+        private void BindCbStationStatus()
+        {
+            System.Data.DataTable _dt =rd.getStationStatusAll();
+            CbStatus.DataSource = _dt;
+            CbStatus.DisplayMember = "Descr";
+            CbStatus.ValueMember = "FldValue";
+            System.Data.DataRow row = _dt.NewRow();
+            row[0] = "";
+            row[1] = "";
+
+            _dt.Rows.InsertAt(row, 0);
+            CbStatus.SelectedIndex = -1;
+        }
+
+        private void addColChk()
+        {
+            if (GV.Columns.Contains("選取"))
+                return;
+            DataGridViewCheckBoxColumn chkbox = new DataGridViewCheckBoxColumn();
+            chkbox.Name = "選取";
+            chkbox.DataPropertyName = "選取";
+            chkbox.HeaderText = "選取";
+            chkbox.ReadOnly = false;
+            chkbox.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.GV.Columns.Insert(0, chkbox);
+        }
+
+        private void LoadGVdt()
+        {
+            if (CbStatus.SelectedValue!=null)
+            dtGV = rd.getOCLGGVSource(CbStatus.SelectedValue.ToString() ,TextSONO.Text,TextRptDateFrom.Text ,TextRptDateTo.Text );
+            else
+            dtGV = rd.getOCLGGVSource("", TextSONO.Text, TextRptDateFrom.Text, TextRptDateTo.Text);
+            GV.DataSource = dtGV;
+                    if (GV.Rows.Count > 0)
+            {
+            addColChk();
+
+            //BindFailReason();
+            GV.Controls.Add(cbNGReasonGV);
+            cbNGReasonGV.Visible = false;
+
+            this.GV.CellEnter += new DataGridViewCellEventHandler(GV_CellEnter);
+            this.GV.CellLeave += new DataGridViewCellEventHandler(GV_CellLeave);
+    
+                reLoadStatus();
+                reLoadReason();
+                reLoadRptMan();
+            }
+        }
+        private void reLoadStatus()
+        {
+            string IDs = "";
+            for (int i = 0; i < GV.Rows.Count; i++)
+            {
+                IDs += "'" + GV[ColStationStatus ,i].Value.ToString() + "',";
+            }
+            IDs = IDs.TrimEnd(',');
+            if (IDs == "") return;
+
+            System.Data.DataTable dt = rd.getStatusDescS(IDs);
+
+            GV.Columns[ColStationStatus].ReadOnly = false;
+            for (int i = 0; i < GV.Rows.Count; i++)
+            {
+                for (int j = 0; j < dt.Rows.Count; j++)
+                {
+                    if (GV[ColStationStatus, i].Value.ToString() == dt.Rows[j][0].ToString())
+                        GV[ColStationStatus, i].Value = dt.Rows[j][1].ToString();
+                }
+            }
+            GV.Columns[ColStationStatus].ReadOnly = true;
+        }
+        private void reLoadReason()
+        {
+            string IDs = "";
+            for (int i = 0; i < GV.Rows.Count; i++)
+            {
+                IDs += "'" + GV[ColNGReason , i].Value.ToString() + "',";
+            }
+            IDs = IDs.TrimEnd(',');
+            if (IDs == "") return;
+            System.Data.DataTable dt = rd.getReasonDescS(IDs);
+
+            GV.Columns[ColNGReason].ReadOnly = false;
+            for (int i = 0; i < GV.Rows.Count; i++)
+            {
+                for (int j = 0; j < dt.Rows.Count; j++)
+                {
+                    if (GV[ColNGReason, i].Value.ToString() == dt.Rows[j][0].ToString())
+                        GV[ColNGReason, i].Value = dt.Rows[j][1].ToString();
+                }
+            } 
+        }
+        private void reLoadRptMan()
+        {
+            string IDs = "";
+            for (int i = 0; i < GV.Rows.Count; i++)
+            {
+                IDs += "'" + GV[ColRptMan , i].Value.ToString() + "',";
+            }
+            IDs = IDs.TrimEnd(',');
+            if (IDs == "") return;
+            System.Data.DataTable dt = rd.getRptManName (IDs);
+
+            GV.Columns[ColRptMan].ReadOnly = false;
+            for (int i = 0; i < GV.Rows.Count; i++)
+            {
+                for (int j = 0; j < dt.Rows.Count; j++)
+                {
+                    if (GV[ColRptMan, i].Value.ToString() == dt.Rows[j][0].ToString())
+                        GV[ColRptMan, i].Value = dt.Rows[j][1].ToString();
+                }
+            }
+            GV.Columns[ColRptMan].ReadOnly = true;
+        }
+
+
+        #endregion 
+ 
+        
+        #region Init monthCalendar
+        private void TextRptDateFrom_Click(object sender, EventArgs e)
+        {
+            this.TextBoxNumber = 1;
+            this.monthCalendar1.Visible = true;
+        }
+        private void TextRptDateTo_Click(object sender, EventArgs e)
+        {
+            this.TextBoxNumber = 2;
+            this.monthCalendar1.Visible = true;
+        }
+        private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
+        {
+            if (this.TextBoxNumber == 1)
+            {
+                MonthCalendarDoubleClick(this.TextRptDateFrom, this.monthCalendar1);
+            }
+            else
+            {
+                MonthCalendarDoubleClick(this.TextRptDateTo, this.monthCalendar1);
+            }
+        }
+        private void MonthCalendarDoubleClick(TextBox SelectedTextBox, MonthCalendar monthCalendar)
+        {
+            DateTime SecondClick = DateTime.Now;//记录下第二次单击时间;
+            string ClickSpan = Convert.ToString(SecondClick - FirstClick);//计算两次单击的时间间隔;格式为:00:00:00.1875000
+            string Separator = ":.";
+            char[] CharClickSpan = Separator.ToCharArray();
+            string[] arrayClickSpan = ClickSpan.Split(CharClickSpan);
+            if (arrayClickSpan.Length == 4 && arrayClickSpan[0].Equals("00") && arrayClickSpan[1].Equals("00") && arrayClickSpan[2].Equals("00"))
+            {
+                if (Convert.ToInt32(arrayClickSpan[3].Substring(0, 3)) > SystemInformation.DoubleClickTime)//如果两次单击的时间间隔大于系统双击时间;
+                {
+                    FirstClick = SecondClick;//赋第二次单击时间给第一次;
+                }
+                else
+                {
+                    //两次单击的时间间隔小于或者等于喜欢双击时间
+                    SelectedTextBox.Text = monthCalendar.SelectionStart.ToString("yyyy-MM-dd");//把双击选中的文本赋给TextBox; 
+                    this.monthCalendar1.Visible = false;
+                }
+            }
+            else
+            {
+                FirstClick = SecondClick;
+            }
+        }
+        private void StationRptStep2_Click(object sender, EventArgs e)
+        {
+            this.monthCalendar1.Visible = false;
+        }
+        #endregion
+
+        #region Init cb of gv
+        private void BindFailReason(string _StationName)
+        {
+            DataTable _dt = rd.getFailReason(_StationName);
+            cbNGReasonGV.ValueMember = "Code";
+            cbNGReasonGV.DisplayMember = "Name";
+            System.Data.DataRow row = _dt.NewRow();
+            row[0] = "";
+            row[1] = "";
+            _dt.Rows.InsertAt(row, 0);
+            cbNGReasonGV.DataSource = _dt;
+            cbNGReasonGV.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void GV_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == ColNGReason)
+            {
+                BindFailReason(GV[ColStationStatus , e.RowIndex ].Value.ToString().Substring(0,2));
+
+                DataGridViewCell cell = GV[e.ColumnIndex, e.RowIndex];
+                Rectangle rect = GV.GetCellDisplayRectangle(cell.ColumnIndex, cell.RowIndex, true);
+                cbNGReasonGV.Location = rect.Location;
+                cbNGReasonGV.Size = rect.Size;
+                if (cell.Value != System.DBNull.Value)
+                    comfirmComboBoxValue(this.cbNGReasonGV, cell.Value.ToString());
+                this.cbNGReasonGV.Visible = true;
+            }
+        }
+        private void GV_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == ColNGReason)
+            {
+                DataGridViewCell cell = this.GV.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                //cell.Value = this.cb.Text;
+                cell.Value = cbNGReasonGV.Text;
+                cell.Tag = cbNGReasonGV.Tag;
+                this.cbNGReasonGV.Visible = false;
+            }
+            //if (e.ColumnIndex == 4)
+            //{
+            //    DataGridViewCell cell = this.GV.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            //    int ret = 0;
+            //    int.TryParse(cell.Value.ToString(), out ret);
+            //    if (ret==0)
+            //        appl.MessageBox("請輸入數值!!",MessageType.Warning );
+            //}
+        }
+        private void comfirmComboBoxValue(ComboBox _cb, String cellValue)
+        {
+            _cb.SelectedIndex = -1;
+            if (cellValue == null)
+            {
+                _cb.Text = "";
+                return;
+            }
+            _cb.Text = cellValue;
+
+            foreach (DataRowView item in _cb.Items)
+            {
+                if (item.Row.ItemArray[1].ToString() == cellValue)
+                {
+                    _cb.SelectedItem = item;
+                }
+            }
+        }
+ 
+        #endregion 
+
+        #region Event of Btn
+
+        private void BtnDel_Click(object sender, EventArgs e)
+        {
+            if (appl.MessageBox("確定刪除?!", MessageType.Warning, MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                this.Cursor = Cursors.WaitCursor;
+                int iChkCnt = 0;
+                try
+                {
+                    DataGridViewCheckBoxCell chk;
+                    string _actNO = "";
+                    for (int i = 0; i < GV.Rows.Count; i++)
+                    {
+                        chk = (DataGridViewCheckBoxCell)GV[ColChk, i];
+                        if ((chk.Value != null) && (bool)(chk.Value))
+                        {
+                            iChkCnt = 1;
+                            _actNO = GV[ColActNO, i].Value.ToString();
+                            wr.closeOCLG(int.Parse(_actNO));
+                            appl.SetSystemLog("站點查詢(S2) 刪除 - 單號 : " + _actNO, MessageType.Error);
+                        }
+                    }
+
+                    if (iChkCnt > 0)
+                    {
+                        LoadGVdt();                        
+                        appl.MessageBox("成功!!", MessageType.Success);
+                        setChkGV(false);
+                    }
+                    else
+                        appl.MessageBox("請勾選!!", MessageType.Success);
+                }
+                catch (Exception ex)
+                {
+                    appl.SetSystemLog("站點查詢(S2) 刪除 - " + ex.ToString(), MessageType.Error);
+                    appl.MessageBox(ex.ToString(), MessageType.Warning);
+                }
+                this.Cursor = Cursors.Default;
+            }
+            else
+                setChkGV(false);
+        }
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            int iChkCnt = 0;
+            try
+            {
+            DataGridViewCheckBoxCell chk;
+            for (int i = 0; i < GV.Rows.Count; i++)
+            {
+                chk = (DataGridViewCheckBoxCell )GV[ColChk , i];
+                if ((chk.Value != null)&&(bool)(chk.Value))
+                {
+                    iChkCnt = 1;
+                        Activity obj = new Activity();
+                        obj.StatusCode = GV[ColStationStatus , i].Value.ToString().Substring(2,2);
+                        if (obj.StatusCode == "02")
+                        {
+                            if (GV[ColNGQty, i].Value.ToString() == "")
+                            {
+                                GV[ColNGQty, i].Selected = true;
+                                appl.MessageBox("請輸入NG數量!!", MessageType.Warning);
+                                this.Cursor = Cursors.Default;
+                                return;
+                            }
+                            if (GV[ColNGReason, i].Value.ToString() == "")
+                            {
+                                GV[ColNGReason, i].Selected = true;
+                                appl.MessageBox("請輸入NG原因!!", MessageType.Warning);
+                                this.Cursor = Cursors.Default;
+                                return;
+                            }                          
+                            obj.NGQty = GV[ColNGQty, i].Value.ToString();
+                            obj.NGReasonCode = GV[ColNGReason, i].Value.ToString().Substring(0, 4);
+                            obj.NGReasonDesc = GV[ColNGReason, i].Value.ToString();
+                        } 
+
+                        obj.key = GV[ColActNO , i].Value.ToString();
+
+                    //for update ordr
+                        obj.StatusCode = GV[ColStationStatus, i].Value.ToString().Substring(0, 4);
+                        obj.RptDate = GV[ColRptDate , i].Value.ToString();
+                        obj.RptTime = GV[ColRptTime , i].Value.ToString();
+                        obj.StatusDesc   = GV[ColStationStatus , i].Value.ToString();
+                        obj.SONO = GV[ColSONO , i].Value.ToString(); 
+
+                        //obj.RptDate = "";//不用更新
+                        //obj.RptID = "";//不用更新
+                        //obj.RptTime = "";//不用更新
+                        //obj.SONO = "";//不用更新
+                        //obj.StatusCode = "";//不用更新
+                        //obj.StatusDesc = ""; //不用更新
+
+                        wr.updateOCLG(obj);
+                        wr.updateORDR(obj);
+                        string msg = "站點查詢(S2) 儲存 - [SONO - {0}] [{1}] [{2}] [{3}] [{4}] [{5}] [{6}] [{7}]";
+                    msg=string.Format(msg,obj.SONO,obj.StatusDesc ,obj.NGQty ,obj.NGReasonCode,obj.NGReasonDesc ,obj.RptID,obj.RptDate ,obj.RptTime  );
+                    appl.SetSystemLog(msg, MessageType.Success);
+                }
+            }
+            if (iChkCnt > 0)
+            {      
+                appl.MessageBox("成功!!", MessageType.Success);
+                setChkGV(false);
+            }
+            else
+                appl.MessageBox("請勾選!!", MessageType.Success);
+        }
+        catch (Exception ex)
+        {
+            appl.SetSystemLog("站點查詢(S2) 儲存 - " + ex.ToString(), MessageType.Error);
+            appl.MessageBox(ex.ToString(), MessageType.Warning);
+        }
+        this.Cursor = Cursors.Default;
+        }
+        private bool chkUserInput()
+        {
+            bool ret = true; 
+
+            int IRet = 0;
+            if (TextSONO.Text.Trim() != "")
+            {
+                int.TryParse(TextSONO.Text, out IRet);
+                if (IRet == 0)
+                {
+                    this.appl.MessageBox("訂單編號不正確!!", MessageType.Warning);
+                    return ret = false; ;
+                }
+            }
+            DateTime dRet;
+            if (TextRptDateFrom.Text.Trim() != "")
+            {
+                DateTime.TryParse(TextRptDateFrom.Text, out dRet);
+                if (dRet == System.DateTime.MinValue)
+                {
+                    this.appl.MessageBox("回報起始日期不正確!!", MessageType.Warning);
+                    return ret = false; ;
+                }
+            }
+            if (TextRptDateTo.Text.Trim() != "")
+            {
+                DateTime.TryParse(TextRptDateTo.Text, out dRet);
+                if (dRet == System.DateTime.MinValue)
+                {
+                    this.appl.MessageBox("回報結束日期不正確!!", MessageType.Warning);
+                    return ret = false; ;
+                }
+            }
+            return ret;
+        }
+        private void BtnFind_Click(object sender, EventArgs e)
+        {
+            if (!chkUserInput())
+                return;
+            this.Cursor = Cursors.WaitCursor;
+            try
+            {
+                LoadGVdt();
+            }
+            catch(Exception ex)
+            {
+                appl.SetSystemLog("站點查詢 - 查詢 - " + ex.ToString(), MessageType.Error);
+                appl.MessageBox(ex.ToString(), MessageType.Warning);
+            }
+            this.Cursor = Cursors.Default ;
+        }
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {        
+            main.Menu_1_Login_Click(null, null);      
+            this.Close(); 
+        }
+
+        private void GV_HeadMouse_Click(object sender, DataGridViewCellMouseEventArgs e)
+        {
+                if (e.ColumnIndex == ColChk )
+            {
+            if (AllChk) AllChk = false;
+            else AllChk = true;
+
+            setChkGV(AllChk );
+                }
+        }
+
+        private void GV_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if ((e.ColumnIndex == ColChk) | (e.ColumnIndex == ColNGQty) | (e.ColumnIndex == ColNGReason))
+                e.Cancel = false;
+            else
+                e.Cancel = true;
+
+        }
+
+        #endregion
+
+        private void setChkGV(bool ischk)
+        {
+            int RowCount = GV.Rows.Count;
+            for (int i = 0; i < RowCount; i++)
+            {
+                GV.Rows[i].Cells[ColChk].Value = ischk;
+            }
+        }
+
+
+
+ 
+
+ 
+
+
+
+
+
+ 
+    }
+}

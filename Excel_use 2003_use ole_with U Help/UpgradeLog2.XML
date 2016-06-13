@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="excel">
+</Property><Property Name="方案檔" Value="D:\cadmen\una_work\sample\read_excel\excel.sln">
+</Property><Property Name="使用者選項檔" Value="D:\cadmen\una_work\sample\read_excel\excel.suo">
+</Property><Property Name="Date" Value="2013年8月15日">
+</Property><Property Name="Time" Value="下午 12:01">
+</Property><Property Name="記錄檔編號" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="excel.sln" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\excel.sln">
+</Event><Event ErrorLevel="0" Project="" Source="excel.suo" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\excel.suo">
+</Event><Event ErrorLevel="0" Project="excel" Source="excel.csproj" Description="專案檔已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\excel.csproj">
+</Event><Event ErrorLevel="0" Project="excel" Source="excel.csproj.user" Description="專案使用者檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\excel.csproj.user">
+</Event><Event ErrorLevel="0" Project="excel" Source="Function.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Function.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="function\Des.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\function\Des.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Connect\PropertySetting.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Connect\PropertySetting.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="function\func_ini.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\function\func_ini.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="function\DesFile.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\function\DesFile.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Connect\DTsConfig.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Connect\DTsConfig.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Connect\DTsMsSQLInfo.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Connect\DTsMsSQLInfo.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Connect\DTsSBOInfo.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Connect\DTsSBOInfo.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Connect\SQLServer.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Connect\SQLServer.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Enum.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Enum.cs">
+</Event><Event ErrorLevel="2" Project="excel" Source="sForm\cvs.cs" Description="無法將檔案備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\cvs.cs">
+</Event><Event ErrorLevel="2" Project="excel" Source="sForm\cvs.Designer.cs" Description="無法將檔案備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\cvs.Designer.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="sForm\ole.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\ole.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="sForm\ole.Designer.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\ole.Designer.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Settings.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Settings.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Properties\Resources.Designer.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Connect\SAP.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Connect\SAP.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Program.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Program.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Properties\AssemblyInfo.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Properties\Settings.Designer.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Connect\DTsUser.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Connect\DTsUser.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="Activity.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Activity.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="sForm\excel_2003.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\excel_2003.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="sForm\excel_2003.Designer.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\excel_2003.Designer.cs">
+</Event><Event ErrorLevel="0" Project="excel" Source="ClassDiagram1.cd" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\ClassDiagram1.cd">
+</Event><Event ErrorLevel="0" Project="excel" Source="Properties\Settings.settings" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="excel" Source="Resources\IMG_10112011_162527.png" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Resources\IMG_10112011_162527.png">
+</Event><Event ErrorLevel="0" Project="excel" Source="Resources\panbor.png" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Resources\panbor.png">
+</Event><Event ErrorLevel="0" Project="excel" Source="panbor.ico" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\panbor.ico">
+</Event><Event ErrorLevel="0" Project="excel" Source="readme.txt" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\readme.txt">
+</Event><Event ErrorLevel="0" Project="excel" Source="sImg\CADMEN.gif" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sImg\CADMEN.gif">
+</Event><Event ErrorLevel="0" Project="excel" Source="sImg\favicon.ico" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sImg\favicon.ico">
+</Event><Event ErrorLevel="0" Project="excel" Source="sImg\HREF.gif" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sImg\HREF.gif">
+</Event><Event ErrorLevel="0" Project="excel" Source="sImg\SAP_Business_One.gif" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sImg\SAP_Business_One.gif">
+</Event><Event ErrorLevel="0" Project="excel" Source="sImg\TMVC_Logo.jpg" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sImg\TMVC_Logo.jpg">
+</Event><Event ErrorLevel="0" Project="excel" Source="sImg\TMVC_Logo_1.jpg" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sImg\TMVC_Logo_1.jpg">
+</Event><Event ErrorLevel="2" Project="excel" Source="sForm\cvs.resx" Description="無法將檔案備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\cvs.resx">
+</Event><Event ErrorLevel="0" Project="excel" Source="sForm\ole.resx" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\ole.resx">
+</Event><Event ErrorLevel="0" Project="excel" Source="Properties\Resources.resx" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="excel" Source="sForm\excel_2003.resx" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\sForm\excel_2003.resx">
+</Event><Event ErrorLevel="1" Project="excel" Source="excel.csproj" Description="您的專案是以 .NET Framework 2.0 或 3.0 為目標。如果您的專案使用需要較新版 .NET Framework 的組件，專案建置將會失敗。您可以變更 .NET Framework 版本，方法是按一下專案功能表上的 [屬性]，然後在 [.NET Framework] 下拉式方塊中選取新的版本 (在 Visual Basic 中，它的位置是在按一下 [進階編譯選項...] 按鈕時顯示的 [編譯] 索引標籤上)。">
+</Event><Event ErrorLevel="0" Project="excel" Source="excel.csproj" Description="專案轉換成功">
+</Event><Event ErrorLevel="3" Project="excel" Source="excel.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\SDK_U_Helper.csproj" Description="警告: 專案檔正備份到與原始方案相對路徑不同的相對路徑。不同的資料夾階層架構可能會在開啟或建置備份方案和專案時產生問題。">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\SDK_U_Helper.csproj" Description="專案檔已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\SDK_U_Helper.csproj">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\SDK_U_Helper.csproj.user" Description="專案使用者檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\SDK_U_Helper.csproj.user">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_Cmd.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_Cmd.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\Des.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\Des.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\DesFile.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\DesFile.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_func_DI.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_func_DI.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func_excel_read.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func_excel_read.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func_excel_stream.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func_excel_stream.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func_excel_write.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func_excel_write.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_Layout.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_Layout.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\DESMain.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\DESMain.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func_txt.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func_txt.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\Func_xml.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\Func_xml.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\Properties\AssemblyInfo.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func_ini.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func_ini.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_UI.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_UI.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_ShowOpenDialog.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_ShowOpenDialog.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_FrmView.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_FrmView.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\SQLServer.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\SQLServer.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_UDO.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_UDO.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\UDT.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\UDT.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_UnitTest.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_UnitTest.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\WindowWrapper.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\WindowWrapper.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_ShowOpenDialogDir.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_ShowOpenDialogDir.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func_excel_read_ole.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func_excel_read_ole.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func_excel_write_ole.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func_excel_write_ole.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\func_excel_read_ole_csv.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\func_excel_read_ole_csv.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\FrmSetProPerty.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\FrmSetProPerty.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\SQLServer2.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\SQLServer2.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\Func_xml2.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\Func_xml2.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\DataGridView.txt" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\DataGridView.txt">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\excle_tmp_OITM.cs" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\excle_tmp_OITM.cs">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\B1_Sample\readme.txt" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\B1_Sample\readme.txt">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\excel.txt" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\excel.txt">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\excel_ole.txt" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\excel_ole.txt">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\excel_ole_IMEX.txt" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\excel_ole_IMEX.txt">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\JScript1.js" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\JScript1.js">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\multi languge.txt" Description="檔案已成功備份為 D:\cadmen\una_work\sample\read_excel\Backup1\SDK_U_Helper\multi languge.txt">
+</Event><Event ErrorLevel="0" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\SDK_U_Helper.csproj" Description="專案檔不需要轉換。">
+</Event><Event ErrorLevel="3" Project="SDK_U_Helper" Source="..\..\TADC\SDK_U_Helper\SDK_U_Helper.csproj" Description="不需要轉換">
+</Event><Event ErrorLevel="0" Project="" Source="excel.sln" Description="這個方案檔不需要轉換。">
+</Event><Event ErrorLevel="3" Project="" Source="excel.sln" Description="不需要轉換">
+</Event><Event ErrorLevel="0" Project="excel" Source="excel.csproj" Description="掃描完成: 專案檔不需要升級。">
+</Event></UpgradeLog>

@@ -1,0 +1,148 @@
+﻿namespace Panbor_ImportWebSO.sForm
+{
+    partial class Login
+    {
+        /// <summary>
+        /// 設計工具所需的變數。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清除任何使用中的資源。
+        /// </summary>
+        /// <param name="disposing">如果應該公開 Managed 資源則為 true，否則為 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計工具產生的程式碼
+
+        /// <summary>
+        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改這個方法的內容。
+        ///
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.BtnClose = new System.Windows.Forms.Button();
+            this.BtnLogin = new System.Windows.Forms.Button();
+            this.TextSapPassword = new System.Windows.Forms.TextBox();
+            this.TextSapUser = new System.Windows.Forms.TextBox();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.chkAutoLogin = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnClose.Location = new System.Drawing.Point(152, 133);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(75, 33);
+            this.BtnClose.TabIndex = 46;
+            this.BtnClose.Text = "關閉";
+            this.BtnClose.UseVisualStyleBackColor = true;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // BtnLogin
+            // 
+            this.BtnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.BtnLogin.Location = new System.Drawing.Point(16, 133);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(75, 33);
+            this.BtnLogin.TabIndex = 45;
+            this.BtnLogin.Text = "登入";
+            this.BtnLogin.UseVisualStyleBackColor = true;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            // 
+            // TextSapPassword
+            // 
+            this.TextSapPassword.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextSapPassword.Location = new System.Drawing.Point(97, 61);
+            this.TextSapPassword.Name = "TextSapPassword";
+            this.TextSapPassword.Size = new System.Drawing.Size(130, 26);
+            this.TextSapPassword.TabIndex = 50;
+            this.TextSapPassword.UseSystemPasswordChar = true;
+            // 
+            // TextSapUser
+            // 
+            this.TextSapUser.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextSapUser.Location = new System.Drawing.Point(98, 29);
+            this.TextSapUser.Name = "TextSapUser";
+            this.TextSapUser.Size = new System.Drawing.Size(130, 26);
+            this.TextSapUser.TabIndex = 48;
+            // 
+            // Label6
+            // 
+            this.Label6.AutoSize = true;
+            this.Label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Label6.Location = new System.Drawing.Point(12, 33);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(41, 20);
+            this.Label6.TabIndex = 47;
+            this.Label6.Text = "帳號";
+            // 
+            // Label7
+            // 
+            this.Label7.AutoSize = true;
+            this.Label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Label7.Location = new System.Drawing.Point(12, 65);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(41, 20);
+            this.Label7.TabIndex = 49;
+            this.Label7.Text = "密碼";
+            // 
+            // chkAutoLogin
+            // 
+            this.chkAutoLogin.AutoSize = true;
+            this.chkAutoLogin.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAutoLogin.Location = new System.Drawing.Point(98, 93);
+            this.chkAutoLogin.Name = "chkAutoLogin";
+            this.chkAutoLogin.Size = new System.Drawing.Size(91, 20);
+            this.chkAutoLogin.TabIndex = 52;
+            this.chkAutoLogin.Text = "自動登入";
+            this.chkAutoLogin.UseVisualStyleBackColor = true;
+            // 
+            // Login
+            // 
+            this.AcceptButton = this.BtnLogin;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(248, 178);
+            this.Controls.Add(this.chkAutoLogin);
+            this.Controls.Add(this.TextSapPassword);
+            this.Controls.Add(this.TextSapUser);
+            this.Controls.Add(this.Label6);
+            this.Controls.Add(this.Label7);
+            this.Controls.Add(this.BtnClose);
+            this.Controls.Add(this.BtnLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "使用者登入";
+            this.Load += new System.EventHandler(this.Login_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        internal System.Windows.Forms.Button BtnClose;
+        internal System.Windows.Forms.Button BtnLogin;
+        internal System.Windows.Forms.TextBox TextSapPassword;
+        internal System.Windows.Forms.TextBox TextSapUser;
+        internal System.Windows.Forms.Label Label6;
+        internal System.Windows.Forms.Label Label7;
+        private System.Windows.Forms.CheckBox chkAutoLogin;
+    }
+}

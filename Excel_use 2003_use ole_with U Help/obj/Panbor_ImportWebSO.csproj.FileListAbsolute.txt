@@ -1,0 +1,54 @@
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Interop.SAPbobsCOM.dll
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.csproj.ResolveComReference.cache
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.Properties.Resources.resources
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.csproj.GenerateResource.Cache
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.sForm.About.resources
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.sForm.Config.resources
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.sForm.Login.resources
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.MainForm.resources
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.sForm.SAP_Connection.resources
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\bin\Panbor_ImportWebSO.exe
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\bin\Panbor_ImportWebSO.pdb
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\bin\WinUI_Helper.dll
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\bin\WinUI_Helper.pdb
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\bin\WinUI_Helper.xml
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\bin\Interop.SAPbobsCOM.dll
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.exe
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.pdb
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.ChangePwd.resources
+E:\cadmen\una_work\tmvc\TMVC_WorkStationRecord - 複製\obj\x86\Debug\Panbor_ImportWebSO.ImportWebSO.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.exe
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Interop.SAPbobsCOM.dll
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.csproj.ResolveComReference.cache
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.ChangePwd.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.ImportWebSO.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.Properties.Resources.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.sForm.About.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.sForm.Config.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.sForm.Login.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.MainForm.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.sForm.SAP_Connection.resources
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.csproj.GenerateResource.Cache
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\bin\Panbor_ImportWebSO.exe
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\bin\Panbor_ImportWebSO.pdb
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\bin\Interop.SAPbobsCOM.dll
+E:\cadmen\una_work\panbor\Panbor_ImportWebSO\obj\x86\Debug\Panbor_ImportWebSO.pdb
+E:\Cadmen\una_work\panbor\Panbor_ImportWebSO\bin\SDK_U_Helper.dll
+E:\Cadmen\una_work\panbor\Panbor_ImportWebSO\bin\Interop.SAPbouiCOM.dll
+E:\Cadmen\una_work\panbor\Panbor_ImportWebSO\bin\SDK_U_Helper.pdb
+E:\Cadmen\una_work\sample\read_excel\obj\x86\Debug\Panbor_ImportWebSO.exe
+E:\Cadmen\una_work\sample\read_excel\obj\x86\Debug\Panbor_ImportWebSO.pdb
+E:\Cadmen\una_work\sample\read_excel\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Cadmen\una_work\sample\read_excel\obj\x86\Debug\Interop.SAPbobsCOM.dll
+E:\Cadmen\una_work\sample\read_excel\obj\x86\Debug\Panbor_ImportWebSO.csproj.ResolveComReference.cache
+E:\Cadmen\una_work\sample\read_excel\obj\x86\Debug\Panbor_ImportWebSO.ImportWebSO.resources
+E:\Cadmen\una_work\sample\read_excel\obj\x86\Debug\Panbor_ImportWebSO.Properties.Resources.resources
+E:\Cadmen\una_work\sample\read_excel\obj\x86\Debug\Panbor_ImportWebSO.csproj.GenerateResource.Cache
+E:\Cadmen\una_work\sample\read_excel\bin\Panbor_ImportWebSO.exe
+E:\Cadmen\una_work\sample\read_excel\bin\Panbor_ImportWebSO.pdb
+E:\Cadmen\una_work\sample\read_excel\bin\SDK_U_Helper.dll
+E:\Cadmen\una_work\sample\read_excel\bin\Interop.SAPbouiCOM.dll
+E:\Cadmen\una_work\sample\read_excel\bin\Interop.SAPbobsCOM.dll
+E:\Cadmen\una_work\sample\read_excel\bin\SDK_U_Helper.pdb

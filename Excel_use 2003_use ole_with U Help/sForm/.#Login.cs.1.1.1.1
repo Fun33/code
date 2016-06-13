@@ -1,0 +1,106 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Panbor_ImportWebSO.sForm
+{
+    public partial class Login : Form
+    {
+        private AP_Appliction appl; 
+
+        public Login(AP_Appliction _appl)
+        {
+            InitializeComponent();
+
+            appl = _appl;    
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        { 
+            this.LoadData();
+        }
+ 
+        /// <summary>
+        // LoadData=setValue
+        /// </summary>
+        private void LoadData()
+        {
+            
+            //-------------------------------------------
+            DTsUser DTsUser = new DTsUser();
+            DTsUser.LoadDecryptFile();
+            if (DTsUser.AutoLogin)
+            {  
+                this.chkAutoLogin.Checked = true;
+                this.TextSapUser.Text = DTsUser.LoginID;
+                this.TextSapPassword.Text = des.Decrypt(DTsUser.Passward );
+                if (!appl.oVar.isLogin)
+                this.BtnLogin_Click(BtnLogin ,null );
+            }
+        }
+
+        #region Events
+        private void BtnLogin_Click(object sender, EventArgs e)
+        { 
+            this.Cursor = Cursors.WaitCursor;
+            if (this.TextSapUser.Text == "")
+            {
+                this.TextSapUser.Focus();
+                this.appl.MessageBox ("請輸入帳號!!", MessageType.Warning);
+                return;
+            } 
+
+            DTsUser DTsUser = new DTsUser();
+            DTsUser.AutoLogin = this.chkAutoLogin.Checked;
+            DTsUser.LoginID = this.TextSapUser.Text;
+            DTsUser.Passward = des.Encrypt   ( this.TextSapPassword.Text); 
+
+            try
+            {
+                if (appl.validUser(DTsUser.LoginID, DTsUser.Passward))
+                {
+                    DTsUser.LoginName = DTsUser.LoginID;
+                    DTsUser.CreateEncrypt();
+
+                    appl.setLogined(DTsUser);
+                    appl.MessageBox("登入成功", MessageType.Success);
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                {                    
+                    appl.MessageBox("登入失敗"  , MessageType.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                appl.SetSystemLog("登入失敗 - " + ex.ToString(), MessageType.Error);
+                appl.MessageBox("登入失敗 - " + ex.ToString(), MessageType.Warning);
+            }
+                        this.Cursor = Cursors.Default;
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Close();
+        }
+
+        #endregion
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+    }
+}

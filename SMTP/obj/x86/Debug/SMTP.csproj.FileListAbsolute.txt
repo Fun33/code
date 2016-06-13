@@ -1,0 +1,9 @@
+D:\Dropbox\Una_Code\sample\SMTP\bin\Debug\SMTP.exe
+D:\Dropbox\Una_Code\sample\SMTP\bin\Debug\SMTP.pdb
+D:\Dropbox\Una_Code\sample\SMTP\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Una_Code\sample\SMTP\obj\x86\Debug\SMTP.Form1.resources
+D:\Dropbox\Una_Code\sample\SMTP\obj\x86\Debug\SMTP.Properties.Resources.resources
+D:\Dropbox\Una_Code\sample\SMTP\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Dropbox\Una_Code\sample\SMTP\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Dropbox\Una_Code\sample\SMTP\obj\x86\Debug\SMTP.exe
+D:\Dropbox\Una_Code\sample\SMTP\obj\x86\Debug\SMTP.pdb

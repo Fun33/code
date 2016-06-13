@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txBOM.Text" xml:space="preserve">
+    <value>		&lt;BOM xmlns=""&gt;
+				&lt;BO&gt;
+					&lt;AdmInfo&gt;
+						&lt;Object&gt;66&lt;/Object&gt;
+						&lt;Version&gt;2&lt;/Version&gt;
+					&lt;/AdmInfo&gt;
+					&lt;QueryParams&gt;
+						&lt;ItemCode&gt;
+							&lt;xsl:value-of select="BOM/BO/ProductTrees/row/TreeCode"&gt;&lt;/xsl:value-of&gt;
+						&lt;/ItemCode&gt;
+					&lt;/QueryParams&gt;
+					&lt;ProductTrees&gt;
+						&lt;row&gt;
+							&lt;TreeCode&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/TreeCode"&gt;&lt;/xsl:value-of&gt;
+							&lt;/TreeCode&gt;
+							&lt;TreeType&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/TreeType"&gt;&lt;/xsl:value-of&gt;
+							&lt;/TreeType&gt;
+							&lt;Quantity&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/Quantity"&gt;&lt;/xsl:value-of&gt;
+							&lt;/Quantity&gt;
+							&lt;!--	&lt;DistributionRule&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/DistributionRule"/&gt;
+							&lt;/DistributionRule&gt;
+							&lt;Project&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/Project"/&gt;
+							&lt;/Project&gt;
+							&lt;DistributionRule2&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/DistributionRule2"/&gt;
+							&lt;/DistributionRule2&gt;
+							&lt;DistributionRule3&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/DistributionRule3"/&gt;
+							&lt;/DistributionRule3&gt;
+							&lt;DistributionRule4&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/DistributionRule4"/&gt;
+							&lt;/DistributionRule4&gt;
+							&lt;DistributionRule5&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/DistributionRule5"/&gt;
+							&lt;/DistributionRule5&gt;--&gt;
+							&lt;U_Process&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/U_Process"&gt;&lt;/xsl:value-of&gt;
+							&lt;/U_Process&gt;
+							&lt;U_Concern&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/U_Concern"&gt;&lt;/xsl:value-of&gt;
+							&lt;/U_Concern&gt;
+							&lt;U_Vmeterial&gt;
+								&lt;xsl:value-of select="BOM/BO/ProductTrees/row/U_Vmeterial"&gt;&lt;/xsl:value-of&gt;
+							&lt;/U_Vmeterial&gt;
+						&lt;/row&gt;
+					&lt;/ProductTrees&gt;
+					&lt;ProductTrees_Lines&gt;
+						&lt;xsl:for-each select="BOM/BO/ProductTrees_Lines/row"&gt;
+							&lt;row&gt;
+								&lt;ItemCode&gt;
+									&lt;xsl:value-of select="ItemCode"&gt;&lt;/xsl:value-of&gt;
+								&lt;/ItemCode&gt;
+								&lt;Quantity&gt;
+									&lt;xsl:value-of select="Quantity"&gt;&lt;/xsl:value-of&gt;
+								&lt;/Quantity&gt;
+								&lt;!--
+								&lt;Warehouse&gt;
+									&lt;xsl:value-of select="Warehouse"/&gt;
+								&lt;/Warehouse&gt;
+								&lt;Price&gt;
+									&lt;xsl:value-of select="Price"/&gt;
+								&lt;/Price&gt; 
+								&lt;Currency&gt;	&lt;xsl:value-of select="Currency"/&gt;&lt;/Currency&gt;--&gt;
+								&lt;IssueMethod&gt;
+									&lt;xsl:value-of select="IssueMethod"&gt;&lt;/xsl:value-of&gt;
+								&lt;/IssueMethod&gt;
+								&lt;Comment&gt;
+									&lt;xsl:value-of select="Comment"&gt;&lt;/xsl:value-of&gt;
+								&lt;/Comment&gt;
+								&lt;ParentItem&gt;
+									&lt;xsl:value-of select="ParentItem"&gt;&lt;/xsl:value-of&gt;
+								&lt;/ParentItem&gt;
+								&lt;!--
+								&lt;PriceList&gt;
+									&lt;xsl:value-of select="PriceList"/&gt;
+								&lt;/PriceList&gt;
+							
+								&lt;Project&gt;
+									&lt;xsl:value-of select="Project"/&gt;
+								&lt;/Project&gt;
+								
+	&lt;DistributionRule&gt;
+									&lt;xsl:value-of select="DistributionRule"/&gt;
+								&lt;/DistributionRule&gt;
+								&lt;DistributionRule2&gt;
+									&lt;xsl:value-of select="DistributionRule2"/&gt;
+								&lt;/DistributionRule2&gt;
+								&lt;DistributionRule3&gt;
+									&lt;xsl:value-of select="DistributionRule3"/&gt;
+								&lt;/DistributionRule3&gt;
+								&lt;DistributionRule4&gt;
+									&lt;xsl:value-of select="DistributionRule4"/&gt;
+								&lt;/DistributionRule4&gt;
+								&lt;DistributionRule5&gt;
+									&lt;xsl:value-of select="DistributionRule5"/&gt;
+								&lt;/DistributionRule5&gt;--&gt;
+											&lt;U_Spec&gt;									
+								&lt;xsl:value-of select="U_Spec"&gt;&lt;/xsl:value-of&gt;
+							&lt;/U_Spec&gt;
+									&lt;U_Process&gt;
+								&lt;xsl:value-of select="U_Process"&gt;&lt;/xsl:value-of&gt;
+							&lt;/U_Process&gt;
+												&lt;U_Equip&gt;
+								&lt;xsl:value-of select="U_Equip"&gt;&lt;/xsl:value-of&gt;
+							&lt;/U_Equip&gt;
+							&lt;/row&gt;
+						&lt;/xsl:for-each&gt;
+					&lt;/ProductTrees_Lines&gt;
+				&lt;/BO&gt;
+			&lt;/BOM&gt;</value>
+  </data>
+  <data name="txOGLT.Text" xml:space="preserve">
+    <value>	 &lt;BOM xmlns=""&gt;
+			 &lt;QueryParams&gt;
+						&lt;UnitCode&gt;
+						&lt;xsl:value-of select="BOM/BO/LengthMeasures/row/UnitCode"&gt;&lt;/xsl:value-of&gt;
+						&lt;/UnitCode&gt;
+					&lt;/QueryParams&gt;
+&lt;BO&gt;
+ &lt;AdmInfo&gt;
+  &lt;Object&gt;50&lt;/Object&gt; 
+  &lt;Version&gt;2&lt;/Version&gt; 
+  &lt;/AdmInfo&gt;
+ &lt;LengthMeasures&gt;
+ &lt;row&gt; 
+ &lt;UnitDisplay&gt;&lt;xsl:value-of select="BOM/BO/LengthMeasures/row/UnitDisplay"&gt;&lt;/xsl:value-of&gt;&lt;/UnitDisplay&gt; 
+  &lt;UnitName&gt;&lt;xsl:value-of select="BOM/BO/LengthMeasures/row/UnitName"&gt;&lt;/xsl:value-of&gt;&lt;/UnitName&gt; 
+  &lt;UnitCodeforQuantityDisplay&gt;&lt;xsl:value-of select="BOM/BO/LengthMeasures/row/UnitCodeforQuantityDisplay"&gt;&lt;/xsl:value-of&gt;&lt;/UnitCodeforQuantityDisplay&gt; 
+  &lt;UnitLengthinmm&gt;&lt;xsl:value-of select="BOM/BO/LengthMeasures/row/UnitLengthinmm"&gt;&lt;/xsl:value-of&gt;&lt;/UnitLengthinmm&gt; 
+  &lt;/row&gt;
+  &lt;/LengthMeasures&gt;
+  &lt;/BO&gt;
+  &lt;/BOM&gt;</value>
+  </data>
+  <metadata name="col_src.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_dest.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="COL_TYPE.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_src_xml.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_dest_xml.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="col_path.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>&lt;Valid&gt;
+								&lt;xsl:value-of select="BO/Items/row/Valid"&gt;&lt;/xsl:value-of&gt;
+							&lt;/Valid&gt;
+							&lt;xsl:choose&gt;
+								&lt;xsl:when test="BO/Items/row/ValidFrom != &amp;apos;&amp;apos;"&gt;
+									&lt;ValidFrom&gt;
+										&lt;xsl:value-of select="BO/Items/row/ValidFrom"&gt;&lt;/xsl:value-of&gt;
+									&lt;/ValidFrom&gt;
+								&lt;/xsl:when&gt;
+								&lt;xsl:otherwise&gt;
+									&lt;ValidFrom&gt;19900101&lt;/ValidFrom&gt;
+								&lt;/xsl:otherwise&gt;
+							&lt;/xsl:choose&gt;
+							&lt;xsl:choose&gt;
+								&lt;xsl:when test="BO/Items/row/ValidTo != &amp;apos;&amp;apos;"&gt;
+									&lt;ValidTo&gt;
+										&lt;xsl:value-of select="BO/Items/row/ValidTo"&gt;&lt;/xsl:value-of&gt;
+									&lt;/ValidTo&gt;
+								&lt;/xsl:when&gt;
+								&lt;xsl:otherwise&gt;
+									&lt;ValidTo&gt;20991231&lt;/ValidTo&gt;
+								&lt;/xsl:otherwise&gt;
+							&lt;/xsl:choose&gt;
+							&lt;ValidRemarks&gt;
+								&lt;xsl:value-of select="BO/Items/row/ValidRemarks"&gt;&lt;/xsl:value-of&gt;
+							&lt;/ValidRemarks&gt;
+							&lt;Frozen&gt;
+								&lt;xsl:value-of select="BO/Items/row/Frozen"&gt;&lt;/xsl:value-of&gt;
+							&lt;/Frozen&gt;
+							&lt;xsl:choose&gt;
+								&lt;xsl:when test="BO/Items/row/FrozenFrom != &amp;apos;&amp;apos;"&gt;
+									&lt;FrozenFrom&gt;
+										&lt;xsl:value-of select="BO/Items/row/FrozenFrom"&gt;&lt;/xsl:value-of&gt;
+									&lt;/FrozenFrom&gt;
+								&lt;/xsl:when&gt;
+								&lt;xsl:otherwise&gt;
+									&lt;FrozenFrom&gt;19900101&lt;/FrozenFrom&gt;
+								&lt;/xsl:otherwise&gt;
+							&lt;/xsl:choose&gt;
+							&lt;xsl:choose&gt;
+								&lt;xsl:when test="BO/Items/row/FrozenTo != &amp;apos;&amp;apos;"&gt;
+									&lt;FrozenTo&gt;
+										&lt;xsl:value-of select="BO/Items/row/FrozenTo"&gt;&lt;/xsl:value-of&gt;
+									&lt;/FrozenTo&gt;
+								&lt;/xsl:when&gt;
+								&lt;xsl:otherwise&gt;
+									&lt;FrozenTo&gt;	20991231&lt;/FrozenTo&gt;
+								&lt;/xsl:otherwise&gt;
+							&lt;/xsl:choose&gt;
+							&lt;FrozenRemarks&gt;
+								&lt;xsl:value-of select="BO/Items/row/FrozenRemarks"&gt;&lt;/xsl:value-of&gt;
+							&lt;/FrozenRemarks&gt;</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAQAUAAAAAAAAAAAAAAAEAAAAB
+        AAAAUhAACVgYAApYGQAJWBkAAVIRABpjKAAhaC8AGWMoABtkKQAkajEAIGcuAAVVFABSil0AZpdvAEJ+
+        TgADVBMAaplzACBoLgAlazIAF2ElAHqkggCyy7cAZZZuAA5bHQCBqYkAKm43AAdWFgByn3oAlridAFeN
+        YQCErIwAapp0ADd3QwABUxEAM3VAAAtZGgBdkWcAMXM+AAxaHAApbjcAiK6PAEeCUgBQiFsAYJNqAEuF
+        VgBqmnMAHWUrACNqMQAobTYAhq2OABBdHwAEVRQADFobAA1bHAARXSAACFcYAFiNYgBllm8AYZRrAJ+9
+        pQBomHEAO3pHAGuadAA2dkIARoJSAB5mLAATXyIAC1kbADp5RgBunHcAb514AI+zlgAobTUAJ2w0AAJT
+        EgAYYiYABlYWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAECAgICAgICAgICAgIDBAUGBwcHBwcHBwcHBwcHCAkKCwAAAAwNDg8GEBEAAAASCgsAAAAA
+        ExQVFhcAAAAAEgoLAAAAABgZGhsEAAAAABIKCwAADwwWHB0eHyAAAAASCgsAACEiIyQlIyYnAAAAEgoL
+        AAAPKCkqKyksLQAAABIKCwAAAC4vMDEvLzIAAAASCgsAAAAAADMtAAAAAAAAEgoLAAAANDU2GzU1NwAA
+        ABIKCwAADzg5Ojs8Fj0AAAASCgsAAAAAPjQtBzoAAAAAEgoLAAAANj8zLQBADwAAABJBQkNDQ0RFRkdF
+        RUhDQzVJShNLS0tLS0tLS0tLS0tLTAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8=
+</value>
+  </data>
+</root>

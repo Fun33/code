@@ -1,0 +1,323 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Panbor_ImportWebSO.sForm
+{
+    public partial class SAP_Connection : Form
+    {
+        private AP_Appliction appl;
+
+        private const string f_CodeColumn = "Code";
+        private const string f_NameColumn = "Name";
+
+        public SAP_Connection(AP_Appliction fTMVC_Appliction)
+        {
+            InitializeComponent();
+
+            appl = fTMVC_Appliction;
+            
+            this.Initialize();
+            this.LoadData();
+        }
+
+        private void Initialize()
+        {
+            DataTable dt = null;
+            DataRow dr = null;
+
+            dt = new DataTable();
+            dt.Columns.Add(f_CodeColumn, typeof(int));
+            dt.Columns.Add(f_NameColumn, typeof(string));
+
+            dr = dt.NewRow();
+            dr[f_CodeColumn] = SAPbobsCOM.BoDataServerTypes.dst_MSSQL;
+            dr[f_NameColumn] = "MSSQL";
+            dt.Rows.Add(dr);
+
+            //dr = dt.NewRow
+            //dr(f_CodeColumn) = SAPbobsCOM.BoDataServerTypes.dst_DB_2
+            //dr(f_NameColumn) = "DB_2"
+            //dt.Rows.Add(dr)
+
+            //dr = dt.NewRow
+            //dr(f_CodeColumn) = SAPbobsCOM.BoDataServerTypes.dst_SYBASE
+            //dr(f_NameColumn) = "SYBASE"
+            //dt.Rows.Add(dr)
+
+            dr = dt.NewRow();
+            dr[f_CodeColumn] = SAPbobsCOM.BoDataServerTypes.dst_MSSQL2005;
+            dr[f_NameColumn] = "MSSQL2005";
+            dt.Rows.Add(dr);
+
+            dr = dt.NewRow();
+            dr[f_CodeColumn] = 6;
+            dr[f_NameColumn] = "MSSQL2008";
+            dt.Rows.Add(dr);
+
+            this.CbDataServerType.DataSource = dt;
+            this.CbDataServerType.DisplayMember = f_NameColumn;
+            this.CbDataServerType.ValueMember = f_CodeColumn;
+
+        }
+
+        private void LoadData()
+        {
+            DTsMsSQLInfo DTsMsSQLInfo = new DTsMsSQLInfo();
+            DTsMsSQLInfo.LoadDecryptFile();
+            this.TextServer.Text = DTsMsSQLInfo.Server;
+            if (!string.IsNullOrEmpty(DTsMsSQLInfo.DataBase))
+            {
+                this.CbCompany.Items.Add(DTsMsSQLInfo.DataBase);
+            }
+            this.CbCompany.SelectedItem = DTsMsSQLInfo.DataBase;
+            this.TextDbSa.Text = DTsMsSQLInfo.Sa;
+            this.TextDbPassword.Text = DTsMsSQLInfo.Password;
+
+            DTsSBOInfo DTsSBOInfo = new DTsSBOInfo();
+            DTsSBOInfo.LoadDecryptFile();
+            this.TextLicServer.Text = DTsSBOInfo.LicenseServer;
+            this.CbDataServerType.SelectedValue = DTsSBOInfo.DataBaseType;
+            this.TextSapUser.Text = DTsSBOInfo.UserName;
+            this.TextSapPassword.Text = DTsSBOInfo.Password;
+            this.ChkUseTrusted.Checked = DTsSBOInfo.UseTrusted;
+
+        }
+
+        #region Events
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            try
+            {
+                if (this.Check() & this.Check2())
+                {
+                    saveInfo();
+                    if (this.TestConnDBW2())
+                    {
+                        appl.setDBLink();
+                        this.DialogResult = System.Windows.Forms.DialogResult.OK;
+                    }
+                }
+                else
+                {
+                    this.appl.MessageBox("資料填寫未完整！", MessageType.Warning );
+                }
+            }
+            catch (Exception ex)
+            {
+                appl.SetSystemLog(ex.ToString(), MessageType.Error);
+                this.appl.MessageBox(ex.Message, MessageType.Error);
+            }
+            this.Cursor = Cursors.Default;
+        }
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Close();
+        }
+        private void BtnTbCount_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            try
+            {
+                if (this.Check() & Check2())
+                {
+                    saveInfo();
+                    TestConnDBW2();
+                }
+                else
+                    this.appl.MessageBox("資料填寫未完整！", MessageType.Warning);
+            }
+            catch (Exception ex)
+            {
+                this.appl.SetSystemLog(ex.Message, MessageType.Error);
+                this.appl.MessageBox(ex.Message, MessageType.Error);
+            }
+            this.Cursor = Cursors.Default;
+        }
+        private bool  TestConnDBW2()
+        {
+            bool ret = false;
+            try
+            {
+                SAP _sap = new SAP();
+                _sap = null;
+                this.appl.MessageBox("已儲存！若欲使用新設定，請重啟系統!!", MessageType.Success);
+                ret = true;
+            }
+            catch(Exception ex)
+            {
+                if (ex.ToString().Contains("Invalid Username"))
+                this.appl.MessageBox("連線失敗 - 請檢查帳號、密碼！", MessageType.Error);
+                else
+                this.appl.MessageBox("連線失敗！" + ex.ToString(), MessageType.Error);
+            }
+            return ret;
+        }
+        //private bool  TestConnDBW1()
+        //{
+        //    bool ret = false;
+        //    try
+        //    {
+        //        DTsMsSQLInfo s = new DTsMsSQLInfo();
+        //        s.LoadDecryptFile();
+
+        //        eMsSQL o = new eMsSQL(s.ConnectString);
+        //        DataTable dt = o.DoQuery("SELECT [object_id] FROM sys.tables");
+        //        //this.TMVC_Appliction.SetSystemLog("MS SQL Test Connect Success!");
+        //        if (dt.Rows.Count > 0)
+        //            this.appl.MessageBox("連線成功!!", MessageType.Success);
+        //        //this.appl.MessageBox("Get Connection Success , Tables Count :" + dt.Rows.Count.ToString(), MessageType.Success);
+        //        dt.Dispose();
+        //        dt = null;
+        //        ret = true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        this.appl.MessageBox("連線失敗!!" + ex.ToString(), MessageType.Error);
+        //    }
+        //    return ret;
+        //}
+        private void BtnGetList_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            if (this.Check())
+            {
+                this.GetCompanyList();
+            }
+            this.Cursor = Cursors.Default;
+        }
+
+        #endregion
+
+        #region Function
+
+        private bool Check()
+        {
+            bool b = true;
+            string s = string.Empty;
+            if (string.IsNullOrEmpty(this.TextServer.Text))
+            {
+                s += "請輸入「DB Server」" + "\n";
+            }
+            if (string.IsNullOrEmpty(this.TextLicServer.Text))
+            {
+                s += "請輸入「License Server」" + "\n";
+            }
+            if (string.IsNullOrEmpty(this.TextDbSa.Text))
+            {
+                s += "請輸入「DB User」" + "\n";
+            }
+            if (string.IsNullOrEmpty(this.TextDbPassword.Text))
+            {
+                s += "請輸入「DB Password」" + "\n";
+            }
+            if (!string.IsNullOrEmpty(s))
+            {
+                this.appl.MessageBox(s, MessageType.Warning);
+                b = false;
+            }
+            return b;
+        }
+
+        private bool Check2()
+        {
+            bool b = true;
+            string s = string.Empty;
+            if (string.IsNullOrEmpty(this.TextSapUser.Text))
+            {
+                s += "請輸入「SAP B1 User」" + "\n";
+            }
+            if (string.IsNullOrEmpty(this.TextSapPassword.Text))
+            {
+                s += "請輸入「SAP B1 Password」" + "\n";
+            }
+            if (!string.IsNullOrEmpty(s))
+            {
+                this.appl.MessageBox(s, MessageType.Warning);
+                b = false;
+            }
+            return b;
+        }
+
+        private void saveInfo()
+        {
+            DTsMsSQLInfo DTsMsSQLInfo = new DTsMsSQLInfo();
+            DTsMsSQLInfo.Server = this.TextServer.Text;
+            DTsMsSQLInfo.Sa = this.TextDbSa.Text;
+            DTsMsSQLInfo.Password = this.TextDbPassword.Text;
+            DTsMsSQLInfo.DataBase = (string)this.CbCompany.SelectedItem;
+            DTsMsSQLInfo.CreateEncrypt();
+
+            DTsSBOInfo DTsSBOInfo = new DTsSBOInfo();
+            DTsSBOInfo.LicenseServer = this.TextLicServer.Text;
+            DTsSBOInfo.DataBaseType = (int)this.CbDataServerType.SelectedValue;
+            DTsSBOInfo.UserName = this.TextSapUser.Text;
+            DTsSBOInfo.Password = this.TextSapPassword.Text;
+            DTsSBOInfo.UseTrusted = this.ChkUseTrusted.Checked;
+            DTsSBOInfo.CreateEncrypt();
+
+            this.appl.SetSystemLog("使用者變更[連線設定]", MessageType.Success);
+              
+        }
+        private void GetCompanyList()
+        {
+            SAPbobsCOM.Company oCompany = default(SAPbobsCOM.Company);
+            SAPbobsCOM.Recordset oRs = default(SAPbobsCOM.Recordset);
+            int lErrCode = 0;
+            string sErrMsg = "";
+            try
+            {
+                oCompany = new SAPbobsCOM.Company();
+                oCompany.DbServerType = (SAPbobsCOM.BoDataServerTypes)this.CbDataServerType.SelectedValue;
+                oCompany.UseTrusted = this.ChkUseTrusted.Checked;
+
+                oCompany.Server = this.TextServer.Text;
+                oCompany.LicenseServer = this.TextLicServer.Text;
+                oCompany.DbUserName = this.TextDbSa.Text;
+                oCompany.DbPassword = this.TextDbPassword.Text;
+
+                oRs = (SAPbobsCOM.Recordset)oCompany.GetCompanyList();
+
+                oCompany.GetLastError(out lErrCode, out sErrMsg);
+
+                if (lErrCode != 0)
+                {
+                    this.appl.MessageBox(sErrMsg, MessageType.Error);
+                }
+                else
+                {
+                    //// Load the available company DB names to the combo box
+                    //// the returned Recordset containds 4 fields:
+                    //// dbName - represents the database name
+                    //// cmpName - represents the company name
+                    //// versStr - represents the version number of the company database
+                    //// dbUser - represents the database owner
+                    //// we are interested in the first filed (mandatory property)
+
+                    this.CbCompany.Items.Clear();
+                    while (!oRs.EoF)
+                    {
+                        this.CbCompany.Items.Add(oRs.Fields.Item(0).Value);
+                        oRs.MoveNext();
+                    }
+                    this.appl.MessageBox("SAP B1 Company 取得完成、請選擇Company", MessageType.Success);
+                    this.CbCompany.Focus();
+                }
+            }
+            catch (Exception ex)
+            {
+                appl.SetSystemLog(ex.ToString(), MessageType.Error);
+                this.appl.MessageBox(ex.Message, MessageType.Error);
+            }
+        }
+
+        #endregion
+
+    }
+}

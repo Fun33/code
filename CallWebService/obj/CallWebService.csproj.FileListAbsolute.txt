@@ -1,0 +1,9 @@
+F:\cadmen\una_work\sample\CallWebService\obj\Debug\ResolveAssemblyReference.cache
+F:\cadmen\una_work\sample\CallWebService\obj\Debug\CallWebService.Form1.resources
+F:\cadmen\una_work\sample\CallWebService\obj\Debug\CallWebService.Properties.Resources.resources
+F:\cadmen\una_work\sample\CallWebService\obj\Debug\CallWebService.csproj.GenerateResource.Cache
+F:\cadmen\una_work\sample\CallWebService\bin\Debug\CallWebService.exe.config
+F:\cadmen\una_work\sample\CallWebService\bin\Debug\CallWebService.exe
+F:\cadmen\una_work\sample\CallWebService\bin\Debug\CallWebService.pdb
+F:\cadmen\una_work\sample\CallWebService\obj\Debug\CallWebService.exe
+F:\cadmen\una_work\sample\CallWebService\obj\Debug\CallWebService.pdb

@@ -1,0 +1,8 @@
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\WindowsService1.ProjectInstaller.resources
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.pdb
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\aaaTest.exe
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\aaaTest.pdb

@@ -1,0 +1,29 @@
+ref
+http://www.dotblogs.com.tw/larrynung/archive/2009/04/24/8158.aspx
+http://social.msdn.microsoft.com/forums/zh-TW/232/thread/065282f3-accf-4693-936b-9ba967119ed1/
+http://social.msdn.microsoft.com/Forums/en-US/232/thread/7e5d6412-354e-4957-8ac2-7fb878bb68f8
+http://bauann-makeit.blogspot.tw/2009/03/how-to.html
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("zh-TW");
+           Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-TW");
+
+ 
+
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+ 
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("zh-CN");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CN");
+
+ 
+
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }

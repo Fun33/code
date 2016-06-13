@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+//ref  http://www.dotblogs.com.tw/yc421206/archive/2009/11/04/11398.aspx
+//如何取出資源檔(法一)，C#使用Properties.Resources.XX ，VB使用My.Resources.XX
+//如何取出資源檔(法二)，使用ResourceManager 類別來取得資源檔的資料
+
+    class DataGridView
+    {
+        #region cell click
+    //        Private Sub XenDataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles XenDataGridView1.CellClick
+    //    If e.RowIndex = -1 Then
+    //        MessageBox.Show("crazy guy")
+    //        Return
+    //    End If
+    //    If e.ColumnIndex <> 1 And e.ColumnIndex <> 2 Then
+    //        MessageBox.Show("not right col")
+    //        Return
+    //    End If
+    //    If e.ColumnIndex = 1 Or e.ColumnIndex = 2 Then
+    //        MessageBox.Show("good job : " + e.RowIndex.ToString() + " : " + e.ColumnIndex.ToString())
+    //    End If
+    //    'If e.RowIndex >= 0 And (sender.Columns(e.ColumnIndex).GetType() = GetType(DataGridViewButtonColumn)) Then
+    //    '    MessageBox.Show("真是好東西耶")
+    //    'End If
+    //    If e.ColumnIndex = XenDataGridView1.Columns("Image").Index Then
+    //        MessageBox.Show("這樣寫也不錯")
+    //    End If
+    //    If "Image" = XenDataGridView1.Columns(e.ColumnIndex).Name Then
+    //        MessageBox.Show("這樣寫也不錯2")
+    //    End If
+    //End Sub
+        #endregion 
+        #region un test System.IO.FileStream 
+        //private void dataGridview1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        //{
+        //    if (dataGridview1.Columns[e.ColumnIndex].Name.Equals("Image"))
+        //    {
+        //        string path = e.Value.ToString();
+        //        e.Value = GetImage(path);
+        //    }
+        //}
+        public System.Drawing.Image GetImage(string path)
+        {
+            System.IO.FileStream fs = new System.IO.FileStream(path, System.IO.FileMode.Open);
+            System.Drawing.Image result = System.Drawing.Image.FromStream(fs);
+            fs.Close();
+            return result;
+        }
+        #endregion 
+        #region "vb datagridimgcol set img"
+//        3.	在formtingcell 指定e.value的值.來源:絻對路徑	>OK
+//    Private Sub XenDataGridView1_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles XenDataGridView1.CellFormatting 
+//        If (XenDataGridView1.Columns(e.ColumnIndex).Name.Equals("Image")) Then
+//            Dim path As String 
+//= "D:\cadmen\99-note\coding\IMG_ico_pickcolor\music.ico"
+//            e.Value = System.Drawing.Image.FromFile(path)
+//        End If
+//    End Sub
+//4.	在formtingcell 指定e.value的值.來源:資源檔	>OK
+//    Private Sub XenDataGridView1_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles XenDataGridView1.CellFormatting 
+//        If (XenDataGridView1.Columns(e.ColumnIndex).Name.Equals("Image")) Then 
+//            Dim image As Image = My.Resources.SQLServer
+//            e.Value = image
+//        End If
+//    End Sub
+
+        #endregion 
+    }
+ 

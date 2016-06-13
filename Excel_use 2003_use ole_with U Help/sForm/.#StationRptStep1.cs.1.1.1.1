@@ -1,0 +1,132 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace TMVC_WorkStationRecord.sForm
+{
+    public partial class StationRptStep1 : Form
+    {
+        private TMVC_Appliction appl;
+        private MainForm main;
+
+        private read rd = new read();
+
+        public StationRptStep1(TMVC_Appliction fTMVC_Appliction,MainForm _main)
+        {
+    
+            InitializeComponent();
+
+            appl = fTMVC_Appliction;
+            main = _main;
+
+        }
+        private void StationRptStep1_Load(object sender, EventArgs e)
+        {
+            this.Text = "站點回報 - " + appl.StationName;
+            BindCB();
+            this.LoadData();
+            TextSONO.Focus();
+        }
+
+        #region "Init"
+        private void BindCB()
+        {
+            CbOCLGUStatus.DataSource = rd.getStationStatus();
+            CbOCLGUStatus.DisplayMember = "Descr";
+            CbOCLGUStatus.ValueMember = "FldValue";
+        }
+        private void LoadData()
+        {
+            this.TextUserID.Text = appl.LoginID;
+            this.TextRptDate.Text = DateTime.Now.ToString("yyyy/MM/dd");
+            this.TextRptTime.Text = DateTime.Now.ToString("HH:mm");
+        }
+        #endregion 
+
+
+
+
+        #region Events 
+        private void BtnOK_Click(object sender, EventArgs e)
+        {
+            if (TextSONO.Text == "")
+            {
+                this.appl.MessageBox("請輸入訂單編號!!", MessageType.Warning);
+                return;
+            }
+            int ret=0;
+            int.TryParse(TextSONO.Text,out ret);
+            if (ret == 0)
+            {
+                this.appl.MessageBox("訂單編號不正確!!", MessageType.Warning);
+                return;
+            }
+
+         this.Cursor =    Cursors.WaitCursor;
+            try
+            {
+                Activity f = new Activity();
+                f.StatusCode = CbOCLGUStatus.SelectedValue.ToString();
+                f.StatusDesc = CbOCLGUStatus.Text;
+                f.SONO = this.TextSONO.Text;
+
+                f.RptID = this.TextUserID.Text;
+                f.RptDate = DateTime.Now.ToString("yyyy/MM/dd");
+                f.RptTime = DateTime.Now.ToString("HH:mm");
+                write obj = new write();
+                obj.addOCLG(f);
+                string msg = "站點回報(S1) - [{0}] [{1}] [{2}] [{3}] [{4}] ";
+                msg=string.Format(msg,f.SONO,f.StatusDesc ,f.RptID,f.RptDate,f.RptTime );
+                appl.SetSystemLog(msg,MessageType.Success );
+                this.appl.MessageBox("完成!!", MessageType.Success);
+                Clear();
+            }
+            catch (Exception ex)
+            {
+                appl.SetSystemLog("站點回報(S1) " + ex.ToString(), MessageType.Error);
+                if (ex.ToString().Contains("Linked document does not exist"))
+                    this.appl.MessageBox("訂單編號不存在!!", MessageType.Warning);
+                else
+                this.appl.MessageBox(ex.ToString(), MessageType.Warning);
+            }
+            this.Cursor = Cursors.Default ;
+        }
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            main.Menu_1_Login_Click(null, null);      
+            this.Close();
+        }
+
+        private void BtnFind_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            StationRptStep2 f = new StationRptStep2(appl ,main);
+            f.MdiParent = this.MdiParent;
+            f.Show();
+            this.Cursor = Cursors.Default;
+        }
+        #endregion
+
+        private void Clear()
+        {
+            this.CbOCLGUStatus.SelectedIndex = 0;
+            this.TextSONO.Text = string.Empty;
+            this.TextSONO.Focus();
+        }
+
+
+ 
+
+ 
+   
+
+    
+
+
+  
+    }
+}

@@ -1,0 +1,410 @@
+﻿namespace Panbor_ImportWebSO.sForm
+{
+    partial class SAP_Connection
+    {
+        /// <summary>
+        /// 設計工具所需的變數。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清除任何使用中的資源。
+        /// </summary>
+        /// <param name="disposing">如果應該公開 Managed 資源則為 true，否則為 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計工具產生的程式碼
+
+        /// <summary>
+        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改這個方法的內容。
+        ///
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.TextLicServer = new System.Windows.Forms.TextBox();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.TextServer = new System.Windows.Forms.TextBox();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.BtnGetList = new System.Windows.Forms.Button();
+            this.GroupBox2 = new System.Windows.Forms.GroupBox();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.CbCompany = new System.Windows.Forms.ComboBox();
+            this.TextSapPassword = new System.Windows.Forms.TextBox();
+            this.TextSapUser = new System.Windows.Forms.TextBox();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.CbDataServerType = new System.Windows.Forms.ComboBox();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.TextDbPassword = new System.Windows.Forms.TextBox();
+            this.TextDbSa = new System.Windows.Forms.TextBox();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.ChkUseTrusted = new System.Windows.Forms.CheckBox();
+            this.BtnTbCount = new System.Windows.Forms.Button();
+            this.BtnClose = new System.Windows.Forms.Button();
+            this.BtnSave = new System.Windows.Forms.Button();
+            this.GroupBox2.SuspendLayout();
+            this.GroupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // TextLicServer
+            // 
+            this.TextLicServer.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextLicServer.Location = new System.Drawing.Point(157, 49);
+            this.TextLicServer.Margin = new System.Windows.Forms.Padding(4);
+            this.TextLicServer.Name = "TextLicServer";
+            this.TextLicServer.Size = new System.Drawing.Size(172, 30);
+            this.TextLicServer.TabIndex = 19;
+            // 
+            // Label5
+            // 
+            this.Label5.AutoSize = true;
+            this.Label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label5.Location = new System.Drawing.Point(16, 49);
+            this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(118, 24);
+            this.Label5.TabIndex = 18;
+            this.Label5.Text = "License Server";
+            // 
+            // TextServer
+            // 
+            this.TextServer.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextServer.Location = new System.Drawing.Point(157, 8);
+            this.TextServer.Margin = new System.Windows.Forms.Padding(4);
+            this.TextServer.Name = "TextServer";
+            this.TextServer.Size = new System.Drawing.Size(172, 30);
+            this.TextServer.TabIndex = 17;
+            // 
+            // Label1
+            // 
+            this.Label1.AutoSize = true;
+            this.Label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label1.Location = new System.Drawing.Point(16, 11);
+            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(86, 24);
+            this.Label1.TabIndex = 16;
+            this.Label1.Text = "DB Server";
+            // 
+            // BtnGetList
+            // 
+            this.BtnGetList.Font = new System.Drawing.Font("新細明體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.BtnGetList.Image = global::Panbor_ImportWebSO.Properties.Resources.HREF;
+            this.BtnGetList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnGetList.Location = new System.Drawing.Point(351, 8);
+            this.BtnGetList.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnGetList.Name = "BtnGetList";
+            this.BtnGetList.Size = new System.Drawing.Size(165, 74);
+            this.BtnGetList.TabIndex = 15;
+            this.BtnGetList.Text = "選擇公司";
+            this.BtnGetList.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnGetList.UseVisualStyleBackColor = true;
+            this.BtnGetList.Click += new System.EventHandler(this.BtnGetList_Click);
+            // 
+            // GroupBox2
+            // 
+            this.GroupBox2.Controls.Add(this.Label8);
+            this.GroupBox2.Controls.Add(this.CbCompany);
+            this.GroupBox2.Controls.Add(this.TextSapPassword);
+            this.GroupBox2.Controls.Add(this.TextSapUser);
+            this.GroupBox2.Controls.Add(this.Label6);
+            this.GroupBox2.Controls.Add(this.Label7);
+            this.GroupBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.GroupBox2.Location = new System.Drawing.Point(351, 89);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.GroupBox2.Name = "GroupBox2";
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.GroupBox2.Size = new System.Drawing.Size(315, 162);
+            this.GroupBox2.TabIndex = 21;
+            this.GroupBox2.TabStop = false;
+            this.GroupBox2.Text = "SAP License Login";
+            // 
+            // Label8
+            // 
+            this.Label8.AutoSize = true;
+            this.Label8.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Label8.Location = new System.Drawing.Point(8, 35);
+            this.Label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label8.Name = "Label8";
+            this.Label8.Size = new System.Drawing.Size(82, 24);
+            this.Label8.TabIndex = 12;
+            this.Label8.Text = "Company";
+            // 
+            // CbCompany
+            // 
+            this.CbCompany.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CbCompany.FormattingEnabled = true;
+            this.CbCompany.Location = new System.Drawing.Point(123, 25);
+            this.CbCompany.Margin = new System.Windows.Forms.Padding(4);
+            this.CbCompany.Name = "CbCompany";
+            this.CbCompany.Size = new System.Drawing.Size(171, 32);
+            this.CbCompany.TabIndex = 11;
+            // 
+            // TextSapPassword
+            // 
+            this.TextSapPassword.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextSapPassword.Location = new System.Drawing.Point(121, 108);
+            this.TextSapPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.TextSapPassword.Name = "TextSapPassword";
+            this.TextSapPassword.Size = new System.Drawing.Size(172, 30);
+            this.TextSapPassword.TabIndex = 10;
+            this.TextSapPassword.UseSystemPasswordChar = true;
+            // 
+            // TextSapUser
+            // 
+            this.TextSapUser.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextSapUser.Location = new System.Drawing.Point(123, 68);
+            this.TextSapUser.Margin = new System.Windows.Forms.Padding(4);
+            this.TextSapUser.Name = "TextSapUser";
+            this.TextSapUser.Size = new System.Drawing.Size(172, 30);
+            this.TextSapUser.TabIndex = 8;
+            // 
+            // Label6
+            // 
+            this.Label6.AutoSize = true;
+            this.Label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Label6.Location = new System.Drawing.Point(8, 71);
+            this.Label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(104, 24);
+            this.Label6.TabIndex = 6;
+            this.Label6.Text = "License User";
+            // 
+            // Label7
+            // 
+            this.Label7.AutoSize = true;
+            this.Label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Label7.Location = new System.Drawing.Point(8, 111);
+            this.Label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(82, 24);
+            this.Label7.TabIndex = 9;
+            this.Label7.Text = "Password";
+            // 
+            // GroupBox1
+            // 
+            this.GroupBox1.Controls.Add(this.CbDataServerType);
+            this.GroupBox1.Controls.Add(this.Label2);
+            this.GroupBox1.Controls.Add(this.TextDbPassword);
+            this.GroupBox1.Controls.Add(this.TextDbSa);
+            this.GroupBox1.Controls.Add(this.Label3);
+            this.GroupBox1.Controls.Add(this.Label4);
+            this.GroupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.GroupBox1.Location = new System.Drawing.Point(16, 89);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.GroupBox1.Name = "GroupBox1";
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.GroupBox1.Size = new System.Drawing.Size(315, 162);
+            this.GroupBox1.TabIndex = 20;
+            this.GroupBox1.TabStop = false;
+            this.GroupBox1.Text = "SQL DataBase";
+            // 
+            // CbDataServerType
+            // 
+            this.CbDataServerType.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CbDataServerType.FormattingEnabled = true;
+            this.CbDataServerType.Location = new System.Drawing.Point(127, 25);
+            this.CbDataServerType.Margin = new System.Windows.Forms.Padding(4);
+            this.CbDataServerType.Name = "CbDataServerType";
+            this.CbDataServerType.Size = new System.Drawing.Size(157, 32);
+            this.CbDataServerType.TabIndex = 7;
+            // 
+            // Label2
+            // 
+            this.Label2.AutoSize = true;
+            this.Label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Label2.Location = new System.Drawing.Point(21, 35);
+            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(75, 24);
+            this.Label2.TabIndex = 4;
+            this.Label2.Text = "DB Type";
+            // 
+            // TextDbPassword
+            // 
+            this.TextDbPassword.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextDbPassword.Location = new System.Drawing.Point(125, 108);
+            this.TextDbPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.TextDbPassword.Name = "TextDbPassword";
+            this.TextDbPassword.Size = new System.Drawing.Size(159, 30);
+            this.TextDbPassword.TabIndex = 10;
+            this.TextDbPassword.UseSystemPasswordChar = true;
+            // 
+            // TextDbSa
+            // 
+            this.TextDbSa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextDbSa.Location = new System.Drawing.Point(125, 68);
+            this.TextDbSa.Margin = new System.Windows.Forms.Padding(4);
+            this.TextDbSa.Name = "TextDbSa";
+            this.TextDbSa.Size = new System.Drawing.Size(159, 30);
+            this.TextDbSa.TabIndex = 8;
+            // 
+            // Label3
+            // 
+            this.Label3.AutoSize = true;
+            this.Label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Label3.Location = new System.Drawing.Point(21, 71);
+            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(72, 24);
+            this.Label3.TabIndex = 6;
+            this.Label3.Text = "DB User";
+            // 
+            // Label4
+            // 
+            this.Label4.AutoSize = true;
+            this.Label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Label4.Location = new System.Drawing.Point(21, 111);
+            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label4.Name = "Label4";
+            this.Label4.Size = new System.Drawing.Size(82, 24);
+            this.Label4.TabIndex = 9;
+            this.Label4.Text = "Password";
+            // 
+            // TextBox1
+            // 
+            this.TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBox1.Enabled = false;
+            this.TextBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox1.Location = new System.Drawing.Point(16, 286);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox1.Multiline = true;
+            this.TextBox1.Name = "TextBox1";
+            this.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TextBox1.Size = new System.Drawing.Size(644, 95);
+            this.TextBox1.TabIndex = 42;
+            this.TextBox1.Text = "**SAP Business One DI API**\r\nFile:Interop.SAPbobsCOM.dll ,Version:2007.0.0.0\r\nPat" +
+                "ch:2007B PL20";
+            // 
+            // ChkUseTrusted
+            // 
+            this.ChkUseTrusted.AutoSize = true;
+            this.ChkUseTrusted.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ChkUseTrusted.Location = new System.Drawing.Point(16, 259);
+            this.ChkUseTrusted.Margin = new System.Windows.Forms.Padding(4);
+            this.ChkUseTrusted.Name = "ChkUseTrusted";
+            this.ChkUseTrusted.Size = new System.Drawing.Size(194, 19);
+            this.ChkUseTrusted.TabIndex = 41;
+            this.ChkUseTrusted.Text = "Use Windows Authentication";
+            this.ChkUseTrusted.UseVisualStyleBackColor = true;
+            // 
+            // BtnTbCount
+            // 
+            this.BtnTbCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnTbCount.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.BtnTbCount.Image = global::Panbor_ImportWebSO.Properties.Resources.HREF;
+            this.BtnTbCount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnTbCount.Location = new System.Drawing.Point(498, 394);
+            this.BtnTbCount.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnTbCount.Name = "BtnTbCount";
+            this.BtnTbCount.Size = new System.Drawing.Size(162, 41);
+            this.BtnTbCount.TabIndex = 45;
+            this.BtnTbCount.Text = "測試連線";
+            this.BtnTbCount.UseVisualStyleBackColor = true;
+            this.BtnTbCount.Click += new System.EventHandler(this.BtnTbCount_Click);
+            // 
+            // BtnClose
+            // 
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnClose.Location = new System.Drawing.Point(124, 391);
+            this.BtnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(100, 41);
+            this.BtnClose.TabIndex = 44;
+            this.BtnClose.Text = "關閉";
+            this.BtnClose.UseVisualStyleBackColor = true;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // BtnSave
+            // 
+            this.BtnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnSave.Location = new System.Drawing.Point(16, 391);
+            this.BtnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(100, 41);
+            this.BtnSave.TabIndex = 43;
+            this.BtnSave.Text = "儲存";
+            this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // 
+            // SAP_Connection
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(680, 448);
+            this.Controls.Add(this.BtnTbCount);
+            this.Controls.Add(this.BtnClose);
+            this.Controls.Add(this.BtnSave);
+            this.Controls.Add(this.TextBox1);
+            this.Controls.Add(this.ChkUseTrusted);
+            this.Controls.Add(this.GroupBox2);
+            this.Controls.Add(this.GroupBox1);
+            this.Controls.Add(this.TextLicServer);
+            this.Controls.Add(this.Label5);
+            this.Controls.Add(this.TextServer);
+            this.Controls.Add(this.Label1);
+            this.Controls.Add(this.BtnGetList);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "SAP_Connection";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SAP Business One 連結設定畫面";
+            this.GroupBox2.ResumeLayout(false);
+            this.GroupBox2.PerformLayout();
+            this.GroupBox1.ResumeLayout(false);
+            this.GroupBox1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        internal System.Windows.Forms.TextBox TextLicServer;
+        internal System.Windows.Forms.Label Label5;
+        internal System.Windows.Forms.TextBox TextServer;
+        internal System.Windows.Forms.Label Label1;
+        internal System.Windows.Forms.Button BtnGetList;
+        internal System.Windows.Forms.GroupBox GroupBox2;
+        internal System.Windows.Forms.Label Label8;
+        internal System.Windows.Forms.ComboBox CbCompany;
+        internal System.Windows.Forms.TextBox TextSapPassword;
+        internal System.Windows.Forms.TextBox TextSapUser;
+        internal System.Windows.Forms.Label Label6;
+        internal System.Windows.Forms.Label Label7;
+        internal System.Windows.Forms.GroupBox GroupBox1;
+        internal System.Windows.Forms.ComboBox CbDataServerType;
+        internal System.Windows.Forms.Label Label2;
+        internal System.Windows.Forms.TextBox TextDbPassword;
+        internal System.Windows.Forms.TextBox TextDbSa;
+        internal System.Windows.Forms.Label Label3;
+        internal System.Windows.Forms.Label Label4;
+        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.CheckBox ChkUseTrusted;
+        internal System.Windows.Forms.Button BtnTbCount;
+        internal System.Windows.Forms.Button BtnClose;
+        internal System.Windows.Forms.Button BtnSave;
+    }
+}

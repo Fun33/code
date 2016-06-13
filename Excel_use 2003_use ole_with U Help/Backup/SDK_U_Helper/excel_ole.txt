@@ -1,0 +1,167 @@
+
+[ADO.NET] 如何 使用 OLE DB 讀寫 Excel / 建立 Excel 檔案 (一)
+
+相關文章[C# .Net] Microsoft.Office.Interop.Excel 讀 / 寫 Excel 語法概全
+
+1.OLE DB的連線字串如下：
+
+//連線字串
+string cs =
+        "Data Source=" + FileName + ";" +
+        "Provider=" + ProviderName +
+        "Extended Properties=" + ExtendedString +
+        "HDR=" + Hdr +
+        "IMEX=" + IMEX;
+ 
+
+1.1 "Data Source"：檔案來源
+
+1.2 "Provider"：提供者名稱
+
+1.3 "Extended Properties"：Excel版本，Excel 8.0 針對Excel2000及以上版本，Excel5.0 針對Excel97。
+
+1.4 "HDR"：第一行是否為標題
+
+1.5 "IMEX" ：通知驅動程序始終將「互混」數據列作為文本讀取
+
+        //定義OLE======================================================
+        //1.檔案位置
+        private const string FileName = "C:\\test.xls";
+        //2.提供者名稱
+        private const string ProviderName = "Microsoft.Jet.OLEDB.4.0;";
+        //3.Excel版本，Excel 8.0 針對Excel2000及以上版本，Excel5.0 針對Excel97。
+        private const string ExtendedString = "'Excel 8.0;";
+        //4.第一行是否為標題
+        private const string Hdr = "Yes;";
+        //5.IMEX=1 通知驅動程序始終將「互混」數據列作為文本讀取
+        private const string IMEX = "0';";
+        //=============================================================
+ 
+        //連線字串
+        string cs =
+                "Data Source=" + FileName + ";" +
+                "Provider=" + ProviderName +
+                "Extended Properties=" + ExtendedString +
+                "HDR=" + Hdr +
+                "IMEX=" + IMEX;
+ 
+2.工作表需加$，如 
+string strCom = " SELECT * FROM [test$] "
+
+3.使用OLE DB讀取合併儲存格可能會發生不可預期的錯誤。
+
+4.Extended Properties參數若有多項時，記得必須用單引號括起來阿
+
+如何讀取Excel
+
+法一：逐行讀取
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.listBox1.Items.Clear();
+            using (OleDbConnection cn = new OleDbConnection(cs))
+            {
+                cn.Open();
+                //工作表名稱需要加$字串
+                string qs = "select * from[" + SheetName + "$]";
+                try
+                {
+                    using (OleDbCommand cmd = new OleDbCommand(qs, cn))
+                    {
+                        using (OleDbDataReader dr = cmd.ExecuteReader())
+                        {
+                            while (dr.Read())
+                            {
+                                int Col = dr.FieldCount;
+                                this.listBox1.Items.Add(dr[0].ToString() + "\t" + dr[1].ToString() + "\t" + dr[2].ToString());
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+ 
+法二：利用資料繫結
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            using (OleDbConnection cn = new OleDbConnection(cs))
+            {
+                cn.Open();
+                string qs = "select * from[" + SheetName + "$]";
+                try
+                {
+                    using (OleDbDataAdapter dr = new OleDbDataAdapter(qs,cn))
+                    {
+                        DataTable dt=new DataTable();
+                        dr.Fill(dt);
+                        this.dataGridView1.DataSource = dt;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+如何列舉EXCEL工作表，判斷工作表是否存在
+
+                using (DataTable dt = cn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null))
+                {
+                    //取得工作表數量，法一
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        Console.WriteLine((String)dr["TABLE_NAME"]);
+                    }
+                    //取得工作表數量，法二
+                    int TableCount = dt.Rows.Count;
+                    for (int i = 1; i < TableCount; i++)
+                    {
+                        string sn = dt.Rows[i][2].ToString().Trim();
+                        Console.WriteLine(sn);
+                        if (sn == SheetName + "$")
+                        {
+                            //判斷工作表是否存在
+                            SheetNameExist = true;
+                            break;
+                        }
+                    }
+ 
+
+如何建立工作表
+
+                        //建立工作表
+                        string qs = "CREATE TABLE [" + SheetName + "] ([ID] INTEGER,[Username] VarChar,[UserPwd] VarChar)";
+                        //qs = "CREATE TABLE TestSheet ([ID] INTEGER,[Username] VarChar,[UserPwd] VarChar)";
+                        using (OleDbCommand cmd = new OleDbCommand(qs, cn))
+                        {
+                            //新增Excel工作表
+                            cmd.ExecuteNonQuery();
+                            //增加資料
+                            cmd.CommandText = "INSERT INTO [" + SheetName + "$] VALUES(1,'elmer','password')";
+                            cmd.ExecuteNonQuery();
+                        }
+ 
+
+如何插入一列
+
+                        string qs = "INSERT INTO [" + SheetName + "$] VALUES(1,'elmer','password')";
+                        using (OleDbCommand cmd = new OleDbCommand(qs, cn))
+                        {
+                            //增加資料
+                            cmd.ExecuteNonQuery();
+                        }
+ 
+
+5.範例已包含VB與C#：OLEDB_Excel.rar 
+
+[檢視圖片]
+
+
+
+點部落 個人首頁
+-----------------------------

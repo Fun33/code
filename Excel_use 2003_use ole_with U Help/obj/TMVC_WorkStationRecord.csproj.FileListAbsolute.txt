@@ -1,0 +1,22 @@
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\Interop.SAPbobsCOM.dll
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.csproj.ResolveComReference.cache
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.Properties.Resources.resources
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.csproj.GenerateResource.Cache
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.sForm.About.resources
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.sForm.Config.resources
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.sForm.Login.resources
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.MainForm.resources
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.sForm.SAP_Connection.resources
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.sForm.StationRptStep1.resources
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.sForm.StationRptStep2.resources
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\bin\TMVC_WorkStationRecord.exe
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\bin\TMVC_WorkStationRecord.pdb
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\bin\WinUI_Helper.dll
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\bin\WinUI_Helper.pdb
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\bin\WinUI_Helper.xml
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\bin\Interop.SAPbobsCOM.dll
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.exe
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord\obj\x86\Debug\TMVC_WorkStationRecord.pdb
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord - 複製\obj\x86\Debug\TMVC_WorkStationRecord.exe
+D:\cadmen\una_work\TMVC\TMVC_WorkStationRecord - 複製\obj\x86\Debug\TMVC_WorkStationRecord.pdb

@@ -1,0 +1,5 @@
+D:\cadmen\una_work\sample\read_excel\obj\x86\Debug\Interop.Excel.dll
+D:\cadmen\una_work\sample\read_excel\obj\x86\Debug\Interop.SAPbobsCOM.dll
+D:\cadmen\una_work\sample\read_excel\obj\x86\Debug\excel.csproj.ResolveComReference.cache
+D:\cadmen\una_work\sample\read_excel\obj\x86\Debug\Panbor_ImportWebSO.exe
+D:\cadmen\una_work\sample\read_excel\obj\x86\Debug\Panbor_ImportWebSO.pdb

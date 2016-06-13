@@ -1,0 +1,10 @@
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\WindowsService1.ProjectInstaller.resources
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\RestartService.exe
+D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\RestartService.pdb
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\RestartService.exe
+D:\9-other\Desktop\WindowsService1\WindowsService1\obj\x86\Debug\RestartService.pdb
+D:\Dropbox2\99_Note\code\sample\RestartService\WindowsService1\obj\x86\Debug\RestartService.exe
+D:\Dropbox2\99_Note\code\sample\RestartService\WindowsService1\obj\x86\Debug\RestartService.pdb

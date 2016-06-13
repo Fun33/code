@@ -1,0 +1,9 @@
+D:\UnaTADC\una_work\sample\callexe\bin\Debug\callexe.exe
+D:\UnaTADC\una_work\sample\callexe\bin\Debug\callexe.pdb
+D:\UnaTADC\una_work\sample\callexe\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\UnaTADC\una_work\sample\callexe\obj\x86\Debug\callexe.Form1.resources
+D:\UnaTADC\una_work\sample\callexe\obj\x86\Debug\callexe.Properties.Resources.resources
+D:\UnaTADC\una_work\sample\callexe\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\UnaTADC\una_work\sample\callexe\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\UnaTADC\una_work\sample\callexe\obj\x86\Debug\callexe.exe
+D:\UnaTADC\una_work\sample\callexe\obj\x86\Debug\callexe.pdb

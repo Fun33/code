@@ -1,0 +1,79 @@
+﻿正在安裝組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在認可組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在解除安裝組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在安裝組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在安裝服務 aaaTest...
+已經成功安裝服務 aaaTest。
+正在記錄檔 Application 中建立 EventLog 來源 aaaTest...
+正在認可組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在解除安裝組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在移除 EventLog 來源 aaaTest。
+已從系統中移除服務 aaaTest...
+已經成功從系統移除服務 aaaTest。
+正在安裝組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在安裝服務 aaaTest...
+已經成功安裝服務 aaaTest。
+正在記錄檔 Application 中建立 EventLog 來源 aaaTest...
+正在認可組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在解除安裝組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在移除 EventLog 來源 aaaTest。
+已從系統中移除服務 aaaTest...
+已經成功從系統移除服務 aaaTest。
+嘗試停止服務 aaaTest。
+正在安裝組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在安裝服務 aaaTest...
+已經成功安裝服務 aaaTest。
+正在記錄檔 Application 中建立 EventLog 來源 aaaTest...
+正在認可組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在解除安裝組件 'D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe'。
+受影響的參數為:
+   logtoconsole = 
+   logfile = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.InstallLog
+   assemblypath = D:\9-other\Desktop\WindowsService1\WindowsService1\bin\Debug\aaaTest.exe
+正在移除 EventLog 來源 aaaTest。
+已從系統中移除服務 aaaTest...
+已經成功從系統移除服務 aaaTest。
