@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C10DAB68-3047-4A1F-BFCA-9C8F4B4A382E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AP_C</RootNamespace>
+    <AssemblyName>Dev_Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="SevenZipSharp, Version=0.64.3890.29348, Culture=neutral, PublicKeyToken=20de82c62b055c88, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\9-other\Desktop\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="B1_Object\FB1iSN2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B1_Object\FB1iSN2.Designer.cs">
+      <DependentUpon>FB1iSN2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B1_Object\B1iSN.cs" />
+    <Compile Include="B1_Object\ITM1.cs" />
+    <Compile Include="B1_Object\OITM.cs" />
+    <Compile Include="B1_Object\ORDR.cs" />
+    <Compile Include="B1_Object\RDR1.cs" />
+    <Compile Include="B1_Object\RDR2.cs" />
+    <Compile Include="B1_Object\RDR3.cs" />
+    <Compile Include="B1_Object\RDR6.cs" />
+    <Compile Include="B1_Object\RDR7.cs" />
+    <Compile Include="B1_Object\RDR5.cs" />
+    <Compile Include="B1_Object\RDR8..cs" />
+    <Compile Include="B1_Object\RDR11..cs" />
+    <Compile Include="B1_Object\RDR9..cs" />
+    <Compile Include="B1_Object\RDR12..cs" />
+    <Compile Include="B1_Object\OCRD.cs" />
+    <Compile Include="B1_Object\CRD1.cs" />
+    <Compile Include="B1_Object\IB1iSN.cs" />
+    <Compile Include="B1_Object_v1\Class1.cs" />
+    <Compile Include="B1_Object_v1\B1iSN_XLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B1_Object_v1\B1iSN_XLS.Designer.cs">
+      <DependentUpon>B1iSN_XLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGetAndCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGetAndCopy.Designer.cs">
+      <DependentUpon>FrmGetAndCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMove.Designer.cs">
+      <DependentUpon>FrmMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTalk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTalk.Designer.cs">
+      <DependentUpon>FrmTalk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTest.Designer.cs">
+      <DependentUpon>FTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="func_txt.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B1_Object_v1\Tool_B1iSN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B1_Object_v1\Tool_B1iSN.Designer.cs">
+      <DependentUpon>Tool_B1iSN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="B1_Object_v1\oitm.cs" />
+    <Compile Include="B1_Object_v1\ocpr.cs" />
+    <Compile Include="B1_Object_v1\ocrd.cs" />
+    <Compile Include="B1_Object_v1\doc.cs" />
+    <Compile Include="B1_Object_v1\Tool_B1iSN3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B1_Object_v1\Tool_B1iSN3.Designer.cs">
+      <DependentUpon>Tool_B1iSN3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="B1_Object\FB1iSN2.resx">
+      <DependentUpon>FB1iSN2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B1_Object_v1\B1iSN_XLS.resx">
+      <DependentUpon>B1iSN_XLS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGetAndCopy.resx">
+      <DependentUpon>FrmGetAndCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMove.resx">
+      <DependentUpon>FrmMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTalk.resx">
+      <DependentUpon>FrmTalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTest.resx">
+      <DependentUpon>FTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B1_Object_v1\Tool_B1iSN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_B1iSN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trim.resx">
+      <DependentUpon>Trim.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="B1_Object_v1\Tool_B1iSN3.resx">
+      <DependentUpon>Tool_B1iSN3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Trim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trim.designer.cs">
+      <DependentUpon>Trim.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="7z.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Dropbox\Una_Code\public\SDK_U_Helper_90\SDK_U_Helper_90.csproj">
+      <Project>{1ED0A215-D648-473E-A5AA-D951178649D7}</Project>
+      <Name>SDK_U_Helper_90</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
