@@ -1,0 +1,10 @@
+D:\Dropbox\Una_Code\sample\Timer_S\bin\Debug\Timer_S.exe
+D:\Dropbox\Una_Code\sample\Timer_S\bin\Debug\Timer_S.pdb
+D:\Dropbox\Una_Code\sample\Timer_S\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Una_Code\sample\Timer_S\obj\x86\Debug\Timer_S.Form1.resources
+D:\Dropbox\Una_Code\sample\Timer_S\obj\x86\Debug\Timer_S.Form2.resources
+D:\Dropbox\Una_Code\sample\Timer_S\obj\x86\Debug\Timer_S.Properties.Resources.resources
+D:\Dropbox\Una_Code\sample\Timer_S\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Dropbox\Una_Code\sample\Timer_S\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Dropbox\Una_Code\sample\Timer_S\obj\x86\Debug\Timer_S.exe
+D:\Dropbox\Una_Code\sample\Timer_S\obj\x86\Debug\Timer_S.pdb

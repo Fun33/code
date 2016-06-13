@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!-- https://jquery.com/download/ -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script><!-- 用 jquery 要掛的東西    他有提供他的空間給你call   通常是下載回自己本機掛-->
+
+
+    <script>
+
+      
+      // Query(); //string
+        //Query3();  //xml
+
+ function Query() {
+            "use strict";  /*JAVASCRIPT 語法比較不嚴謹   加這段可以判斷嚴格一點*/
+
+            var xmlData = "A";
+           
+            var param = jQuery.param({ "p1": xmlData });   /*可帶參數用   */
+
+           
+            $.ajax({
+                url: "Handler3.ashx", type: "POST", dataType: "text", data: param, cache: false, async: false,
+                success: function (xxxx, status) {
+
+                    $("#username").text(xxxx);
+
+                   
+                },
+                error: function (xhrInstance, status, xhrException) {  }
+            });
+        }
+
+        function Query2() {
+            "use strict";  /*JAVASCRIPT 語法比較不嚴謹   加這段可以判斷嚴格一點*/
+
+            var xmlData = "A";
+
+            var param = jQuery.param({ "p1": xmlData });   /*可帶參數用   */
+
+
+            $.ajax({
+                url: "Handler3.ashx", type: "POST", dataType: "text", data: param, cache: false, async: false,
+                success: function (xxxx, status) {
+
+                    alert(xxxx);
+
+
+                },
+                error: function (xhrInstance, status, xhrException) { }
+            });
+        }
+
+        function Query3() {
+            "use strict";  /*JAVASCRIPT 語法比較不嚴謹   加這段可以判斷嚴格一點*/
+
+
+            var xmlData = "B";
+
+            var param = jQuery.param({ "p1": xmlData });   /*可帶參數用   */
+
+            $.ajax({
+                url: "Handler3.ashx", type: "POST", dataType: "xml", data: param, cache: false, async: false,
+                success: function (xml, status) {
+
+                    /*這是jquery的寫法了 （javascript 跟 jquery會混用）*/
+                    $("#username").text($(xml).find("web101").text());
+                   
+                                                   /*抓xml中 web101 節點的值*/
+
+
+
+
+
+                },
+                error: function (xhrInstance, status, xhrException) { }
+            });
+        }
+    
+    </script>
+</head>
+<body>
+
+
+歡迎光臨，<span id="username">xxxxx</span>今天好嗎？ 
+<br/><br/><br/><br/><br/>
+<span id="Span1">xxxxx</span>
+<br/><br/><br/><br/><br/>
+<span id="Span2">xxxxx</span>
+
+
+
+</body>
+</html>
+    <script>
+
+
+       //Query(); //string
+       // Query3();  //xml
+        //Query2();
+        var tmp = "<b>我是被粗體標籤「b」包起來的東西</b>"
+        $("#Span1").text(tmp);
+        $("#Span2").html(tmp);
+        </script>
