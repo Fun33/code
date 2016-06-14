@@ -1,0 +1,9 @@
+D:\9-other\Desktop\繼承\繼承\bin\Debug\繼承.exe
+D:\9-other\Desktop\繼承\繼承\bin\Debug\繼承.pdb
+D:\9-other\Desktop\繼承\繼承\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\9-other\Desktop\繼承\繼承\obj\x86\Debug\繼承.Form1.resources
+D:\9-other\Desktop\繼承\繼承\obj\x86\Debug\繼承.Properties.Resources.resources
+D:\9-other\Desktop\繼承\繼承\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\9-other\Desktop\繼承\繼承\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\9-other\Desktop\繼承\繼承\obj\x86\Debug\繼承.exe
+D:\9-other\Desktop\繼承\繼承\obj\x86\Debug\繼承.pdb
