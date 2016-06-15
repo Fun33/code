@@ -1,0 +1,9 @@
+D:\Dropbox2\ReadExcel\ReadExcel\bin\Debug\ReadExcel.exe
+D:\Dropbox2\ReadExcel\ReadExcel\bin\Debug\ReadExcel.pdb
+D:\Dropbox2\ReadExcel\ReadExcel\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox2\ReadExcel\ReadExcel\obj\x86\Debug\ReadExcel.Form1.resources
+D:\Dropbox2\ReadExcel\ReadExcel\obj\x86\Debug\ReadExcel.Properties.Resources.resources
+D:\Dropbox2\ReadExcel\ReadExcel\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Dropbox2\ReadExcel\ReadExcel\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Dropbox2\ReadExcel\ReadExcel\obj\x86\Debug\ReadExcel.exe
+D:\Dropbox2\ReadExcel\ReadExcel\obj\x86\Debug\ReadExcel.pdb
