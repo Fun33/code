@@ -40,7 +40,7 @@ namespace 防止PrintScrn
         public StopPrinScrn(System.Windows.Forms.Form frm)
         {
             this._TimersTimer = new System.Timers.Timer();
-            this._TimersTimer.Interval = 200;//1/5 秒 ( 可自行調整 )
+            this._TimersTimer.Interval = 100;//1/5 秒 ( 可自行調整 )
             this._TimersTimer.Elapsed += new System.Timers.ElapsedEventHandler(_TimersTimer_Elapsed);
             this._TimersTimer.SynchronizingObject = frm;//目前的執行緒必須先設為單一執行緒 Apartment (STA) 模式，才能進行 OLE 呼叫。請確認您的 Main 函式上已經標記有 STAThreadAttribute。
             this._TimersTimer.Start();
@@ -102,7 +102,7 @@ namespace 防止PrintScrn
                 //MessageBox.Show("被我抓到了");
                 if (Clipboard.ContainsText(TextDataFormat.Text))
                 {
-                    string str = Clipboard.GetText(TextDataFormat.Text);
+                    string str = Clipboard.GetText();
                     if (getProcessNameFromFocusedWindow() == "LINE")
                     {
                         Clipboard.Clear();//' 若按了 Print Screen 鍵, 則清空剪貼簿                   
@@ -265,11 +265,11 @@ namespace 防止PrintScrn
         private void savetxt(string str)
         {
             string filename = @"c:\test" + DateTime.Now.ToString("yyyyMMdd HHmmss") + ".txt";
-            System.IO.FileStream fileStream = new System.IO.FileStream(filename, System.IO.FileMode.Create);
+            //System.IO.FileStream fileStream = new System.IO.FileStream(filename, System.IO.FileMode.Create,Encoding.UTF8);
 
-            fileStream.Close();   //切記開了要關,不然會被佔用而無法修改喔!!!
+            //fileStream.Close();   //切記開了要關,不然會被佔用而無法修改喔!!!
 
-            using (System.IO.StreamWriter sw = new System.IO.StreamWriter(filename))
+            using (System.IO.StreamWriter sw = new System.IO.StreamWriter(filename, false, Encoding.Default))
             {
                 // 欲寫入的文字資料 ~ 
                 sw.WriteLine(str);
