@@ -177,7 +177,7 @@ using Microsoft.Office.Interop.Excel;
     }
     public void write(string PODocNum, string item, Int16 qty)
     {
-        string Filename = "C:\\cadmen\\" + PODocNum + ".xlt";
+        string Filename = "C:\\test\\" + PODocNum + ".xlt";
         string[] ary = new string[] {
 			PODocNum,
 			item,
