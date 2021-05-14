@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2021-05-14T07:04:53.286Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="lfWurht-whT4P7Lnyph_" version="14.6.13" type="github"><diagram id="tQZTior54kskZZ6vKHP7" name="Page-1">1Vhtb9owEP41/jiUd5KPCYROWzd1ZVvLp8lLXJIqxJFjStivn00c8mKgoWIlkxDync+O/dxzd7aBPlkVNwRm0RccogRoSlgAfQo0bWxr7J8rtqXC0O1SsSRxWKrUWjGP/yChVIR2HYcobxlSjBMaZ21lgNMUBbSlg4TgTdvsCSftr2ZwiSTFPICJrH2IQxqVWlsb1/qPKF5G1ZdVyyl7VrAyFjvJIxjiTUOl+0CfEIxp2VoVE5Rw7CpcynGzI737hRGU0l4D9Oc75StEweN4FcO7Xwvn86cPYpYXmKzFhoHvAHsMHBX4FrB94LKdWgn7gvebsNaSt3iXOwWuDnwTeBNgz8QW6bbCbRPFFM0zGHB5w6jBhkV0lTBJZU2YZ6W3nuIChXxKaTfV0hChqGioxO5uEF4hSrbMRPQaikC6opoQNw2/CVXUcFmlg4Ipy/3ENZisIfA8A1vtALYmsNlvh5s7A/ZExvbB94YApuq0wVS1K6NpSWiqo/m3WxnAuX//078fAoaW3sFQuTYjFQkWFLJ0J0RMaISXOIWJX2s9gtdpyCGZKkyqbW4xzgR4z4jSrcjdcE1xG1pUxPRRDOftBW+PTCFNi0bXdFsJKdvvYzUBFxqjuFgP20nVuBDm0W6t6ikX5nhNAnQCKJHdKSRLRE/YqWZpyFE8yQiCEkjjl3ZRubh/x1KMaKPvrnfruz/+pzjRzCvHiS1nbilu0tDlxwsmBQnM8zjokL4isHIegY/C+ToXe1KxAap5ANRK15ux4gt3OGYr3vtUG3dyn9VxVhmDYlTz2NKZyOgm0XFnohIYaSLmHbhtmGXcIJeosQfm7WxxLsAWkSLVM1Lk27PbsJhidhzcjeq+RJGqrdGPKJeigXrgLP1WHtS+XzRdf7pUNpLLopmFhlEqrUGRTrc7JUcbTHo6wu5OPq0uyDWJyxkvS2lbZvD7nRfPSYYXL7evJ1Gtb10e1hmxWnfrWmoBzwbuBPjs3wGutbvgO8CZ6Ycu/wbwvN3l3wKOB7zZgScD+YGA22hCw0RPvopc4eSpm52ouvYNTTWuc5h4//jpHT7asAuHeqnC0T0g/+vjiikxzRgdfuo7khsOXCn5e4wynIulqR4pzpcPbybWT7mlj+r3cN3/Cw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-14T07:05:58.448Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="wOxHenfPxIzUwDJazCRf" version="14.6.13" type="github">
+  <diagram id="tQZTior54kskZZ6vKHP7" name="Page-1">
+    <mxGraphModel dx="782" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-bMBAxVpsLkqdiTJ2wIZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="13jP0NaecX7miaP_Y9KJ-1" target="13jP0NaecX7miaP_Y9KJ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13jP0NaecX7miaP_Y9KJ-1" value="金控&lt;br&gt;正式" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="400" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-bMBAxVpsLkqdiTJ2wIZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="13jP0NaecX7miaP_Y9KJ-2" target="13jP0NaecX7miaP_Y9KJ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-bMBAxVpsLkqdiTJ2wIZ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="13jP0NaecX7miaP_Y9KJ-2" target="13jP0NaecX7miaP_Y9KJ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13jP0NaecX7miaP_Y9KJ-2" value="元富&lt;br&gt;WEB" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="190" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="13jP0NaecX7miaP_Y9KJ-6" value="1.SQL&lt;br&gt;SERVER" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="630" y="100" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="13jP0NaecX7miaP_Y9KJ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="13jP0NaecX7miaP_Y9KJ-7" target="13jP0NaecX7miaP_Y9KJ-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13jP0NaecX7miaP_Y9KJ-7" value="2.TABLEAU&lt;br&gt;SERVER" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="630" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="13jP0NaecX7miaP_Y9KJ-11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" parent="1" source="13jP0NaecX7miaP_Y9KJ-7" target="13jP0NaecX7miaP_Y9KJ-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="220" as="sourcePoint" />
+            <mxPoint x="430" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bMBAxVpsLkqdiTJ2wIZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="13jP0NaecX7miaP_Y9KJ-12" target="13jP0NaecX7miaP_Y9KJ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13jP0NaecX7miaP_Y9KJ-12" value="測試機3&lt;br&gt;代替金控正式那台" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="330" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="13jP0NaecX7miaP_Y9KJ-15" value="4.&lt;br&gt;測試機&lt;br&gt;SQL SERVER" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="480" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
